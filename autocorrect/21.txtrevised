@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+	<hazards>
+		<vaac>
+			<incident>
+				<vaac_id>Tsunami<vaac_id>
+				<vaac_code>seismic<vaac_code>
+				<issued_id>information<issued_id>

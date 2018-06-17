@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEHW40</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>170753</ddhhmm>
+				<awips>TSUHWX</awips>
+				<UGC>
+					<stateID>HI</stateID>
+					<UGCFormat>Z</UGCFormat>
+					<code>001&gt;003-005&gt;009-012&gt;014-016&gt;021-023&gt;026-</code>
+					<purgeTime>170953</purgeTime>
+				</UGC>
+				<bulletinNumber>10</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>953 PM HST WED SEP 16 2015</time>
+				<issueTo>EMERGENCY MANAGEMENT IN THE STATE OF HAWAII</issueTo>
+				<subject>TSUNAMI ADVISORY SUPPLEMENT</subject>
+				<brief>A TSUNAMI ADVISORY CONTINUES IN EFFECT FOR THE STATE OF HAWAII.</brief>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<time>1254 PM HST 16 SEP 2015</time>
+					<latitude>31.5 SOUTH</latitude>
+					<longitude>72.0 WEST</longitude>
+					<location>NEAR THE COAST OF CENTRAL CHILE</location>
+					<magnitude>
+						<value>8.3</value>
+						<scale>MOMENT</scale>
+					</magnitude>
+				</event>
+				<waveActivity>
+					<wave>
+						<location>JUAN FERNANDEZ</location>
+						<latitude>33.6S</latitude>
+						<longitude>78.8W</longitude>
+						<time>0038Z</time>
+						<amplitudeM>1.21M</amplitudeM>
+						<amplitudeFt>4.0FT</amplitudeFt>
+						<period>08MIN</period>
+					</wave>
+					<wave>
+						<location>SANTACRUZ GALAPAGOS</location>
+						<latitude>0.7S</latitude>
+						<longitude>90.3W</longitude>
+						<time>0643Z</time>
+						<amplitudeM>0.56M</amplitudeM>
+						<amplitudeFt>1.8FT</amplitudeFt>
+						<period>12MIN</period>
+					</wave>
+					<wave>
+						<location>DART 43413</location>
+						<latitude>10.8N</latitude>
+						<longitude>100.1W</longitude>
+						<time>0639Z</time>
+						<amplitudeM>0.02M</amplitudeM>
+						<amplitudeFt>0.1FT</amplitudeFt>
+						<period>40MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32411</location>
+						<latitude>5.0N</latitude>
+						<longitude>90.8W</longitude>
+						<time>0517Z</time>
+						<amplitudeM>0.03M</amplitudeM>
+						<amplitudeFt>0.1FT</amplitudeFt>
+						<period>48MIN</period>
+					</wave>
+					<wave>
+						<location>EASTER CL</location>
+						<latitude>27.2S</latitude>
+						<longitude>109.4W</longitude>
+						<time>0505Z</time>
+						<amplitudeM>0.83M</amplitudeM>
+						<amplitudeFt>2.7FT</amplitudeFt>
+						<period>04MIN</period>
+					</wave>
+					<wave>
+						<location>COQUIMBO CL</location>
+						<latitude>30.0S</latitude>
+						<longitude>71.3W</longitude>
+						<time>0025Z</time>
+						<amplitudeM>4.75M</amplitudeM>
+						<amplitudeFt>15.6FT</amplitudeFt>
+						<period>20MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32402</location>
+						<latitude>26.7S</latitude>
+						<longitude>74.0W</longitude>
+						<time>2334Z</time>
+						<amplitudeM>0.10M</amplitudeM>
+						<amplitudeFt>0.3FT</amplitudeFt>
+						<period>32MIN</period>
+					</wave>
+					<wave>
+						<location>CALLAO LA-PUNTA PE</location>
+						<latitude>12.1S</latitude>
+						<longitude>77.2W</longitude>
+						<time>0309Z</time>
+						<amplitudeM>0.25M</amplitudeM>
+						<amplitudeFt>0.8FT</amplitudeFt>
+						<period>28MIN</period>
+					</wave>
+					<wave>
+						<location>MATARANI PE</location>
+						<latitude>17.0S</latitude>
+						<longitude>72.1W</longitude>
+						<time>0103Z</time>
+						<amplitudeM>0.14M</amplitudeM>
+						<amplitudeFt>0.5FT</amplitudeFt>
+						<period>40MIN</period>
+					</wave>
+					<wave>
+						<location>QUIRIQUINA CL</location>
+						<latitude>36.6S</latitude>
+						<longitude>73.1W</longitude>
+						<time>0249Z</time>
+						<amplitudeM>0.83M</amplitudeM>
+						<amplitudeFt>2.7FT</amplitudeFt>
+						<period>88MIN</period>
+					</wave>
+					<wave>
+						<location>TALCAHUANO CL</location>
+						<latitude>36.7S</latitude>
+						<longitude>73.1W</longitude>
+						<time>0253Z</time>
+						<amplitudeM>1.30M</amplitudeM>
+						<amplitudeFt>4.3FT</amplitudeFt>
+						<period>90MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32412</location>
+						<latitude>18.0S</latitude>
+						<longitude>86.3W</longitude>
+						<time>0146Z</time>
+						<amplitudeM>0.05M</amplitudeM>
+						<amplitudeFt>0.2FT</amplitudeFt>
+						<period>20MIN</period>
+					</wave>
+					<wave>
+						<location>CALDERA CL</location>
+						<latitude>27.1S</latitude>
+						<longitude>70.8W</longitude>
+						<time>0258Z</time>
+						<amplitudeM>0.98M</amplitudeM>
+						<amplitudeFt>3.2FT</amplitudeFt>
+						<period>20MIN</period>
+					</wave>
+					<wave>
+						<location>BUCALEMU CL</location>
+						<latitude>34.6S</latitude>
+						<longitude>72.0W</longitude>
+						<time>0246Z</time>
+						<amplitudeM>0.76M</amplitudeM>
+						<amplitudeFt>2.5FT</amplitudeFt>
+						<period>12MIN</period>
+					</wave>
+					<wave>
+						<location>HUASCO CL</location>
+						<latitude>28.5S</latitude>
+						<longitude>71.2W</longitude>
+						<time>0106Z</time>
+						<amplitudeM>0.77M</amplitudeM>
+						<amplitudeFt>2.5FT</amplitudeFt>
+						<period>12MIN</period>
+					</wave>
+					<wave>
+						<location>SAN FELIX CL</location>
+						<latitude>26.3S</latitude>
+						<longitude>80.1W</longitude>
+						<time>0051Z</time>
+						<amplitudeM>0.69M</amplitudeM>
+						<amplitudeFt>2.3FT</amplitudeFt>
+						<period>08MIN</period>
+					</wave>
+					<wave>
+						<location>CONSTITUCION CL</location>
+						<latitude>35.4S</latitude>
+						<longitude>72.5W</longitude>
+						<time>0124Z</time>
+						<amplitudeM>0.88M</amplitudeM>
+						<amplitudeFt>2.9FT</amplitudeFt>
+						<period>60MIN</period>
+					</wave>
+					<wave>
+						<location>CORRAL CL</location>
+						<latitude>39.9S</latitude>
+						<longitude>73.4W</longitude>
+						<time>0124Z</time>
+						<amplitudeM>0.22M</amplitudeM>
+						<amplitudeFt>0.7FT</amplitudeFt>
+						<period>34MIN</period>
+					</wave>
+					<wave>
+						<location>TOCOPILLA CL</location>
+						<latitude>22.1S</latitude>
+						<longitude>70.2W</longitude>
+						<time>0046Z</time>
+						<amplitudeM>0.12M</amplitudeM>
+						<amplitudeFt>0.4FT</amplitudeFt>
+						<period>38MIN</period>
+					</wave>
+					<wave>
+						<location>CHANARAL CL</location>
+						<latitude>26.4S</latitude>
+						<longitude>70.6W</longitude>
+						<time>0043Z</time>
+						<amplitudeM>1.09M</amplitudeM>
+						<amplitudeFt>3.6FT</amplitudeFt>
+						<period>30MIN</period>
+					</wave>
+					<wave>
+						<location>TALTAL CL</location>
+						<latitude>25.4S</latitude>
+						<longitude>70.5W</longitude>
+						<time>0018Z</time>
+						<amplitudeM>0.25M</amplitudeM>
+						<amplitudeFt>0.8FT</amplitudeFt>
+						<period>38MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32401</location>
+						<latitude>20.5S</latitude>
+						<longitude>73.4W</longitude>
+						<time>0020Z</time>
+						<amplitudeM>0.06M</amplitudeM>
+						<amplitudeFt>0.2FT</amplitudeFt>
+						<period>48MIN</period>
+					</wave>
+					<wave>
+						<location>VALPARAISO CL</location>
+						<latitude>33.0S</latitude>
+						<longitude>71.6W</longitude>
+						<time>2350Z</time>
+						<amplitudeM>1.62M</amplitudeM>
+						<amplitudeFt>5.3FT</amplitudeFt>
+						<period>40MIN</period>
+					</wave>
+					<wave>
+						<location>SAN ANTONIO CL</location>
+						<latitude>33.6S</latitude>
+						<longitude>71.6W</longitude>
+						<time>2358Z</time>
+						<amplitudeM>0.86M</amplitudeM>
+						<amplitudeFt>2.8FT</amplitudeFt>
+						<period>18MIN</period>
+					</wave>
+				</waveActivity>
+				<evaluation>BASED ON ALL AVAILABLE DATA A MAJOR TSUNAMI IS NOT EXPECTED TO STRIKE THE STATE OF HAWAII. HOWEVER...SEA LEVEL CHANGES AND STRONG CURRENTS MAY OCCUR ALONG ALL COASTS THAT COULD BE A HAZARD TO SWIMMERS AND BOATERS AS WELL AS TO PERSONS NEAR THE SHORE AT BEACHES AND IN HARBORS AND MARINAS. THE THREAT MAY CONTINUE FOR SEVERAL HOURS AFTER THE INITIAL WAVE ARRIVAL. %% THE ESTIMATED TIME OF ARRIVAL OF THE INITIAL WAVE IS %% 0311 AM HST THU 17 SEP 2015 </evaluation>
+				<additionalInfo>FURTHER MESSAGES WILL BE ISSUED HOURLY OR SOONER AS CONDITIONS WARRANT UNTIL THE THREAT TO HAWAII HAS PASSED. %% </additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

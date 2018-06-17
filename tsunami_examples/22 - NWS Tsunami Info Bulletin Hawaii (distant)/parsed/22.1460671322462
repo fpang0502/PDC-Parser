@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEHW42</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>142158</ddhhmm>
+				<awips>TIBHWX</awips>
+				<UGC>
+					<stateID>HI</stateID>
+					<UGCFormat>Z</UGCFormat>
+					<code>001&gt;003-005&gt;009-012&gt;014-016&gt;021-023&gt;026-</code>
+					<purgeTime>142358</purgeTime>
+				</UGC>
+				<bulletinNumber>1</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>1158 AM HST THU APR 14 2016</time>
+				<issueTo>EMERGENCY MANAGEMENT IN THE STATE OF HAWAII</issueTo>
+				<subject>TSUNAMI INFORMATION STATEMENT</subject>
+				<brief>THIS STATEMENT IS FOR INFORMATION ONLY. NO ACTION REQUIRED.</brief>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<time>1150 AM HST 14 APR 2016</time>
+					<latitude>14.5 SOUTH</latitude>
+					<longitude>166.3 EAST</longitude>
+					<location>VANUATU</location>
+					<magnitude>
+						<value>6.6</value>
+						<scale>MOMENT</scale>
+					</magnitude>
+				</event>
+				<evaluation>BASED ON ALL AVAILABLE DATA A DESTRUCTIVE PACIFIC-WIDE TSUNAMI IS NOT EXPECTED AND THERE IS NO TSUNAMI THREAT TO HAWAII. REPEAT. A DESTRUCTIVE PACIFIC-WIDE TSUNAMI IS NOT EXPECTED AND THERE IS NO TSUNAMI THREAT TO HAWAII. </evaluation>
+				<additionalInfo>THIS WILL BE THE ONLY STATEMENT ISSUED FOR THIS EVENT UNLESS ADDITIONAL DATA ARE RECEIVED. %% </additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

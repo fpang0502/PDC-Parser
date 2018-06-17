@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEHW42</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>132059</ddhhmm>
+				<awips>TIBHWX</awips>
+				<UGC>
+					<stateID>HI</stateID>
+					<UGCFormat>Z</UGCFormat>
+					<code>001&gt;003-005&gt;009-012&gt;014-016&gt;021-023&gt;026-</code>
+					<purgeTime>132259</purgeTime>
+				</UGC>
+				<bulletinNumber>1</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>1059 AM HST FRI NOV 13 2015</time>
+				<issueTo>EMERGENCY MANAGEMENT IN THE STATE OF HAWAII</issueTo>
+				<subject>TSUNAMI INFORMATION STATEMENT</subject>
+				<brief>THIS STATEMENT IS FOR INFORMATION ONLY. NO ACTION REQUIRED.</brief>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<time>1051 AM HST 13 NOV 2015</time>
+					<latitude>30.9 NORTH</latitude>
+					<longitude>128.7 EAST</longitude>
+					<location>NORTHWEST OF THE RYUKYU ISLANDS</location>
+					<magnitude>
+						<value>7.0</value>
+						<scale>MOMENT</scale>
+					</magnitude>
+				</event>
+				<evaluation>BASED ON ALL AVAILABLE DATA A DESTRUCTIVE PACIFIC-WIDE TSUNAMI IS NOT EXPECTED AND THERE IS NO TSUNAMI THREAT TO HAWAII. REPEAT. A DESTRUCTIVE PACIFIC-WIDE TSUNAMI IS NOT EXPECTED AND THERE IS NO TSUNAMI THREAT TO HAWAII. </evaluation>
+				<additionalInfo>THIS WILL BE THE ONLY STATEMENT ISSUED FOR THIS EVENT UNLESS ADDITIONAL DATA ARE RECEIVED. %% </additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

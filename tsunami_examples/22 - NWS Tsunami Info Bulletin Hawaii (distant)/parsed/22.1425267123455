@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEHW42</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>020331</ddhhmm>
+				<awips>TIBHWX</awips>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>531 PM HST SUN MAR 1 2015</time>
+				<issuer>PACIFIC TSUNAMI WARNING CENTER</issuer>
+			</incident>
+		</tsunami>
+	</hazards>

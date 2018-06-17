@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEHW42</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>200143</ddhhmm>
+				<awips>TIBHWX</awips>
+			</incident>
+		</tsunami>
+	</hazards>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>SEHW70</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>280811</ddhhmm>
+				<awips>EQIHWX</awips>
+				<UGC>
+					<stateID>HI</stateID>
+					<UGCFormat>Z</UGCFormat>
+					<code>001&gt;003-005&gt;009-012&gt;014-016&gt;021-023&gt;026-</code>
+					<purgeTime>281011</purgeTime>
+				</UGC>
+				<bulletinNumber>1</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>1011 PM HST SAT JUN 27 2015</time>
+				<issueTo>EMERGENCY MANAGEMENT IN THE STATE OF HAWAII</issueTo>
+				<subject>LOCAL TSUNAMI INFORMATION STATEMENT</subject>
+				<brief>THIS STATEMENT IS FOR INFORMATION ONLY. NO ACTION REQUIRED.</brief>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<time>1010 PM HST 27 JUN 2015</time>
+					<latitude>19.3 NORTH</latitude>
+					<longitude>155.2 WEST</longitude>
+					<location>IN THE HILINA REGION OF KILAUEA VOLCANO</location>
+					<magnitude>
+						<value>4.8</value>
+					</magnitude>
+				</event>
+				<evaluation>NO TSUNAMI IS EXPECTED. REPEAT. NO TSUNAMI IS EXPECTED. HOWEVER...SOME AREAS MAY HAVE EXPERIENCED SHAKING. </evaluation>
+				<additionalInfo>THIS WILL BE THE ONLY STATEMENT ISSUED FOR THIS EVENT UNLESS ADDITIONAL DATA ARE RECEIVED. %% </additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

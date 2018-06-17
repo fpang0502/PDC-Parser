@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+	<hazards>
+		<vaac>
+			<incident>
+				<vaac_id>FVXX23<vaac_id>
+				<vaac_code>KNES<vaac_code>
+				<issued_id>220841<issued_id>
+				<issued_time>20180222/0841Z<issued_time>
+				<vaac>WASHINGTON<vaac>
+				<volcano_name>FUEGO<volcano_name>
+				<volcano_id>342090<volcano_id>
+				<position>N1428 W09052<position>
+				<area>GUATEMALA<area>
+				<summit_elev>3763<summit_elev>
+				<adv_num>2018/163<adv_num>
+				<info_source>GOES-EAST. NWP MODELS. CIMSS VOLCAT.VOLCANO WEB CAMERA. <info_source>
+				<eruption_details>VA EMS C<eruption_details>
+				<obs_time>22/0815Z %%<obs_time>
+				<obs_cld_data>FC/FL150 N1433 W09113 - N1430 W09054- N1426 W09055 - N1423 W09111 - N1433 W09113 MOVW 5-10KT <obs_cld_data>
+				<fcst_cld_6hr_time>22/1430Z<fcst_cld_6hr_time>
+				<fcst_cld_6hr_data>SFC/FL150 N1436 W09153 
+- N1425 W09154 - N1424 W09213 - N1435 W09214 - N1436 W09153 SFC/FL150 N1433 W09111 - N1430 W09055 - N1426 W09054 - N1423 W09110 - N1433 W09111    %%<fcst_cld_6hr_data>
+				<fcst_cld_12hr_time>/2030Z<fcst_cld_12hr_time>
+				<fcst_cld_12hr_data>SFC/FL150 N1434 
+W09112 - N1430 W09053 - N1427 W09055 - N1424 W09110 - N1434 W09112    %%<fcst_cld_12hr_data>
+				<fcst_cld_12hr_data>23/0230Z<fcst_cld_12hr_data>
+				<fcst_cld_18hr_data>SFC/FL150 NO ASH EXP 
+ <fcst_cld_18hr_data>
+				<remarks>CONT VA EM SEEN ON STLT MOV W EXTENDINGAPPROX 20 NM AWAY FM THE SUMMIT. VA HEIGHT ANDMOVEMENT BASED ON GOES EAST IMAGERY. MODELSSUGGEST W-WARD MOV THRU T+12 HRS ...KIM<remarks>
+				<nxt_adv>WILL BE ISSUED BY 20180222/1445Z %% %%<nxt_adv>
+			</incident>
+		</vaac>
+	</hazards>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>SEHW70</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>240835</ddhhmm>
+				<awips>EQIHWX</awips>
+				<UGC>
+					<stateID>HI</stateID>
+					<UGCFormat>Z</UGCFormat>
+					<code>001&gt;003-005&gt;009-012&gt;014-016&gt;021-023&gt;026-</code>
+					<purgeTime>240935</purgeTime>
+				</UGC>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER/NOAA/NWS</issuer>
+				<time>1035 PM HST FRI JAN 23 2015</time>
+				<issueTo>CIVIL DEFENSE IN THE STATE OF HAWAII</issueTo>
+				<subject>LOCAL TSUNAMI INFORMATION</subject>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<latitude>19.4 NORTH</latitude>
+					<longitude>155.2 WEST</longitude>
+					<depth>13 KM</depth>
+					<location>25 MILES SW OF HILO HAWAII</location>
+					<magnitude>
+						<value>3.6</value>
+					</magnitude>
+				</event>
+				<evaluation>NO TSUNAMI IS EXPECTED. REPEAT. NO TSUNAMI IS EXPECTED </evaluation>
+				<additionalInfo>THIS WILL BE THE ONLY MESSAGE ISSUED FOR THIS EVENT UNLESS ADDITIONAL DATA ARE RECEIVED. %% </additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

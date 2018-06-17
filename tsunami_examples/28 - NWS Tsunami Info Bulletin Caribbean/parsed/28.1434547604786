@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WECA43</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>171324</ddhhmm>
+				<awips>TIBCAX</awips>
+				<bulletinNumber>1</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>1324 UTC WED JUN 17 2015</time>
+				<declaration>TSUNAMI INFORMATION STATEMENT .</declaration>
+				<brief>THIS MESSAGE IS FOR INFORMATION ONLY.</brief>
+				<overview>THIS BULLETIN IS ISSUED AS ADVICE TO GOVERNMENT AGENCIES. ONLY NATIONAL AND LOCAL GOVERNMENT AGENCIES HAVE THE AUTHORITY TO MAKE DECISIONS REGARDING THE OFFICIAL STATE OF ALERT IN THEIR AREA AND ANY ACTIONS TO BE TAKEN IN RESPONSE.</overview>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<time>1252Z 17 JUN 2015</time>
+					<latitude>35.5 SOUTH</latitude>
+					<longitude>17.2 WEST</longitude>
+					<location>SOUTHERN MID-ATLANTIC RIDGE</location>
+					<magnitude>
+						<value>7.0</value>
+					</magnitude>
+				</event>
+				<evaluation>A DESTRUCTIVE WIDESPREAD TSUNAMI THREAT DOES NOT EXIST BASED ON HISTORICAL EARTHQUAKE AND TSUNAMI DATA. </evaluation>
+				<additionalInfo>THIS WILL BE THE ONLY PRODUCT ISSUED BY THE PACIFIC TSUNAMI WARNING CENTER FOR THIS EVENT UNLESS ADDITIONAL INFORMATION BECOMES AVAILABLE. %%</additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

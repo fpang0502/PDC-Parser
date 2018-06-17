@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WECA43</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>271419</ddhhmm>
+				<awips>TIBCAX</awips>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>1419 UTC FRI FEB 27 2015</time>
+				<declaration>THIS MESSAGE IS FOR TEST PURPOSES ONLY... ...TEST SPECIAL COMMUNICATION TEST. NO RESPONSE REQUIRED. TEST.</declaration>
+				<issuer>PACIFIC TSUNAMI WARNING CENTER</issuer>
+			</incident>
+		</tsunami>
+	</hazards>

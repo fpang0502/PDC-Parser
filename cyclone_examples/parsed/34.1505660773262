@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<cyclone>
+			<incident>
+				<wmoID>WTNT25</wmoID>
+				<station>KNHC</station>
+				<ddhhmm>171452</ddhhmm>
+				<awips>TCMAT5</awips>
+				<stormType>TROPICAL STORM</stormType>
+				<stormName>MARIA</stormName>
+				<advisoryNumber>5</advisoryNumber>
+				<issuer>NWS NATIONAL HURRICANE CENTER MIAMI FL </issuer>
+				<basinID>AL</basinID>
+				<sequenceID>15</sequenceID>
+				<yearID>2017</yearID>
+				<dateTime>1500 UTC SUN SEP 17 2017</dateTime>
+				<overview>A HURRICANE WARNING IS IN EFFECT FOR... * DOMINICA</overview>
+				<overview>A TROPICAL STORM WARNING IS IN EFFECT FOR... * ST. LUCIA</overview>
+				<overview>A HURRICANE WATCH IS IN EFFECT FOR... * ANTIGUA... BARBUDA... ST. KITTS... NEVIS... AND MONTSERRAT * GUADELOUPE * SABA AND ST. EUSTATIUS * ST. MAARTEN * ST. MARTIN AND ST. BARTHELEMY * ANGUILLA</overview>
+				<overview>A TROPICAL STORM WATCH IS IN EFFECT FOR... * MARTINIQUE * BARBADOS * ST. VINCENT AND THE GRENADINES</overview>
+				<latestDetails>
+					<latitude>13.5N</latitude>
+					<longitude>56.2W</longitude>
+					<day>17</day>
+					<time>1500</time>
+					<timeZone>Z</timeZone>
+					<accuracy>30</accuracy>
+					<movement>
+						<direction>290</direction>
+						<speed>13</speed>
+					</movement>
+					<minPressure>994</minPressure>
+					<maxWinds>55</maxWinds>
+					<gusts>65</gusts>
+					<radii50Knot>
+						<NEradii>30</NEradii>
+						<SEradii>20</SEradii>
+						<SWradii>0</SWradii>
+						<NWradii>20</NWradii>
+					</radii50Knot>
+					<radii34Knot>
+						<NEradii>60</NEradii>
+						<SEradii>40</SEradii>
+						<SWradii>30</SWradii>
+						<NWradii>50</NWradii>
+					</radii34Knot>
+					<radii12ftSeas>
+						<NEradii>120</NEradii>
+						<SEradii>60</SEradii>
+						<SWradii>30</SWradii>
+						<NWradii>90</NWradii>
+					</radii12ftSeas>
+				</latestDetails>
+				<forecast>
+					<day>18</day>
+					<time>0000</time>
+					<timeZone>Z</timeZone>
+					<latitude>14.1N</latitude>
+					<longitude>57.7W</longitude>
+					<maxWinds>65</maxWinds>
+					<gusts>80</gusts>
+					<windRadii>64 KT</windRadii>
+					<radii64Knot>
+						<NEradii>20</NEradii>
+						<SEradii>0</SEradii>
+						<SWradii>0</SWradii>
+						<NWradii>15</NWradii>
+					</radii64Knot>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>40</NEradii>
+						<SEradii>20</SEradii>
+						<SWradii>20</SWradii>
+						<NWradii>30</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>80</NEradii>
+						<SEradii>40</SEradii>
+						<SWradii>40</SWradii>
+						<NWradii>60</NWradii>
+					</radii34Knot>
+				</forecast>
+				<forecast>
+					<day>18</day>
+					<time>1200</time>
+					<timeZone>Z</timeZone>
+					<latitude>14.8N</latitude>
+					<longitude>59.3W</longitude>
+					<maxWinds>75</maxWinds>
+					<gusts>90</gusts>
+					<windRadii>64 KT</windRadii>
+					<radii64Knot>
+						<NEradii>25</NEradii>
+						<SEradii>15</SEradii>
+						<SWradii>0</SWradii>
+						<NWradii>15</NWradii>
+					</radii64Knot>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>40</NEradii>
+						<SEradii>30</SEradii>
+						<SWradii>20</SWradii>
+						<NWradii>30</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>80</NEradii>
+						<SEradii>60</SEradii>
+						<SWradii>40</SWradii>
+						<NWradii>70</NWradii>
+					</radii34Knot>
+				</forecast>
+				<forecast>
+					<day>19</day>
+					<time>0000</time>
+					<timeZone>Z</timeZone>
+					<latitude>15.5N</latitude>
+					<longitude>60.7W</longitude>
+					<maxWinds>85</maxWinds>
+					<gusts>105</gusts>
+					<windRadii>64 KT</windRadii>
+					<radii64Knot>
+						<NEradii>25</NEradii>
+						<SEradii>15</SEradii>
+						<SWradii>10</SWradii>
+						<NWradii>15</NWradii>
+					</radii64Knot>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>50</NEradii>
+						<SEradii>30</SEradii>
+						<SWradii>20</SWradii>
+						<NWradii>30</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>90</NEradii>
+						<SEradii>80</SEradii>
+						<SWradii>50</SWradii>
+						<NWradii>80</NWradii>
+					</radii34Knot>
+				</forecast>
+				<forecast>
+					<day>19</day>
+					<time>1200</time>
+					<timeZone>Z</timeZone>
+					<latitude>16.1N</latitude>
+					<longitude>62.0W</longitude>
+					<maxWinds>95</maxWinds>
+					<gusts>115</gusts>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>50</NEradii>
+						<SEradii>40</SEradii>
+						<SWradii>30</SWradii>
+						<NWradii>40</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>100</NEradii>
+						<SEradii>90</SEradii>
+						<SWradii>70</SWradii>
+						<NWradii>90</NWradii>
+					</radii34Knot>
+				</forecast>
+				<forecast>
+					<day>20</day>
+					<time>1200</time>
+					<timeZone>Z</timeZone>
+					<latitude>17.3N</latitude>
+					<longitude>64.7W</longitude>
+					<maxWinds>110</maxWinds>
+					<gusts>135</gusts>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>60</NEradii>
+						<SEradii>50</SEradii>
+						<SWradii>40</SWradii>
+						<NWradii>50</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>110</NEradii>
+						<SEradii>100</SEradii>
+						<SWradii>80</SWradii>
+						<NWradii>100</NWradii>
+					</radii34Knot>
+				</forecast>
+				<outlook>
+					<day>21</day>
+					<time>1200</time>
+					<timeZone>Z</timeZone>
+					<latitude>18.5N</latitude>
+					<longitude>67.5W</longitude>
+					<maxWinds>105</maxWinds>
+					<gusts>130</gusts>
+				</outlook>
+				<outlook>
+					<day>22</day>
+					<time>1200</time>
+					<timeZone>Z</timeZone>
+					<latitude>20.0N</latitude>
+					<longitude>69.5W</longitude>
+					<maxWinds>100</maxWinds>
+					<gusts>120</gusts>
+				</outlook>
+				<nextAdvisory>
+					<day>17</day>
+					<time>2100</time>
+					<timeZone>Z</timeZone>
+				</nextAdvisory>
+				<forecaster>BERG</forecaster>
+			</incident>
+		</cyclone>
+	</hazards>

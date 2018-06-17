@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>SEHW70</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>281413</ddhhmm>
+				<awips>EQIHWX</awips>
+				<UGC>
+					<stateID>HI</stateID>
+					<UGCFormat>Z</UGCFormat>
+					<code>001&gt;003-005&gt;009-012&gt;014-016&gt;021-023&gt;026-</code>
+					<purgeTime>281613</purgeTime>
+				</UGC>
+				<bulletinNumber>1</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>413 AM HST MON MAR 28 2016</time>
+				<issueTo>EMERGENCY MANAGEMENT IN THE STATE OF HAWAII</issueTo>
+				<subject>LOCAL TSUNAMI INFORMATION STATEMENT</subject>
+				<brief>THIS STATEMENT IS FOR INFORMATION ONLY. NO ACTION REQUIRED.</brief>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<time>0404 AM HST 28 MAR 2016</time>
+					<latitude>20.8 NORTH</latitude>
+					<longitude>156.5 WEST</longitude>
+					<location>IN WEST MAUI</location>
+					<magnitude>
+						<value>3.6</value>
+					</magnitude>
+				</event>
+				<evaluation>NO TSUNAMI IS EXPECTED. REPEAT. NO TSUNAMI IS EXPECTED. </evaluation>
+				<additionalInfo>THIS WILL BE THE ONLY STATEMENT ISSUED FOR THIS EVENT UNLESS ADDITIONAL DATA ARE RECEIVED. %% </additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

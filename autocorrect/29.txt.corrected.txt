@@ -1,0 +1,5 @@
+This is a test message. This is an unscheduled test of the communication methods used to disseminate tsunami information from the Pacific Tsunami Warning Center to the CARIBE-EWS Tsunami Warning Focal Points. This will test several recent changes to the CARIBE-EWS TWP contacts. 
+
+This test is conducted on the first Thursday of each month at 1530 UTC. The message is sent by several communication methods including the Global telecommunications system or GTS...The aeronautical fixed telecommunications network of AFTN...by email...and by telefax. 
+
+This message should arrive by all designated methods within a few minutes of its being disseminated. Tsunami Warning Focal Points should check that it was received by all methods in a timely fashion. 

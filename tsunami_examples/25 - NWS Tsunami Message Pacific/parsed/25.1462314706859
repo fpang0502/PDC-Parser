@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEPA40</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>032230</ddhhmm>
+				<awips>TSUPAC</awips>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>2230 UTC TUE MAY 3 2016</time>
+				<declaration>THIS MESSAGE IS FOR TEST PURPOSES ONLY... ...TEST PTWC MONTHLY COMMUNICATION TEST.</declaration>
+				<notice>THIS MESSAGE SHOULD ARRIVE BY ALL DESIGNATED METHODS WITHIN A</notice>
+				<issuer>PACIFIC TSUNAMI WARNING CENTER EMAIL - COMMS@PTWC.NOAA.GOV</issuer>
+			</incident>
+		</tsunami>
+	</hazards>

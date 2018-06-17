@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+	<hazards>
+		<vaac>
+			<incident>
+				<vaac_id>FVXX23</vaac_id>
+				<vaac_code>KNES</vaac_code>
+				<issued_id>230214</issued_id>
+				<issued_time>20180223/0214Z</issued_time>
+				<vaac>WASHINGTON</vaac>
+				<volcano_name>FUEGO</volcano_name>
+				<volcano_id>342090</volcano_id>
+				<position>N1428 W09052</position>
+				<area>GUATEMALA</area>
+				<summit_elev>3763</summit_elev>
+				<adv_num>2018/166</adv_num>
+				<info_source>GOES-EAST. NWP MODELS. CIMSS VOLCAT.  %%</info_source>
+				<eruption_details>GOING VA EM  %%</eruption_details>
+				<obs_time>23/0115Z  %%</obs_time>
+				<obs_cld_data>FC/FL170 N1421 W09131 - N1417 W09129- N1415 W09134 - N1419 W09135 - N1421 W09131 MOV SW 10-15KT SFC/FL170 N1429 W09053 - N1429 W09053 - N1423 W09100 - N1428 W09101 - N1429 W09053 MOV SW 10-15KT    %%</obs_cld_data>
+				<fcst_cld_6hr_time>23/0730Z</fcst_cld_6hr_time>
+				<fcst_cld_6hr_data>SFC/FL170 N1430 W09053 
+- N1414 W09111 - N1427 W09116 - N1430 W09053    %%</fcst_cld_6hr_data>
+				<fcst_cld_12hr_time>3/1330Z</fcst_cld_12hr_time>
+				<fcst_cld_12hr_data>SFC/FL170 N1430 
+W09052 - N1413 W09111 - N1427 W09116 - N1430 W09052    %%</fcst_cld_12hr_data>
+				<fcst_cld_12hr_data>23/1930Z</fcst_cld_12hr_data>
+				<fcst_cld_18hr_data>SFC/FL170 NO ASH EXP 
+  %%</fcst_cld_18hr_data>
+				<remarks>ONGOING INTERMITTENT EMS MOV SW. MOREOVER,REMNANT VA IS OBS 42 NM SW FR THE SUMMIT AND DISP QUICKLY. NWP MODEL GUIDANCE INDICATES CONT W TO SW MOV THROUGH +12 HRS. ...ZHU   %%</remarks>
+				<nxt_adv>WILL BE ISSUED BY 20180223/0815Z %% %%</nxt_adv>
+			</incident>
+		</vaac>
+	</hazards>

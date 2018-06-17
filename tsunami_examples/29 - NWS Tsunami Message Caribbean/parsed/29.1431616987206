@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WECA41</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>141520</ddhhmm>
+				<awips>TSUCAX</awips>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>1520 UTC THU MAY 14 2015</time>
+				<declaration>THIS MESSAGE IS FOR TEST PURPOSES ONLY... ...TEST PTWC UNSCHEDULED CARIBE-EWS COMMUNICATIONS TEST.</declaration>
+				<brief>THIS MESSAGE SHOULD ARRIVE BY ALL DESIGNATED METHODS WITHIN A FEW MINUTES OF ITS BEING DISSEMINATED. TSUNAMI WARNING FOCAL POINTS SHOULD CHECK THAT IT WAS RECEIVED BY ALL METHODS IN A TIMELY FASHION.</brief>
+			</incident>
+		</tsunami>
+	</hazards>

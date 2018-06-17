@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WECA43</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>191347</ddhhmm>
+				<awips>TIBCAX</awips>
+				<bulletinNumber>1</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>1343 UTC SAT MAR 19 2016</time>
+				<declaration>TSUNAMI INFORMATION STATEMENT - RETRANSMISSION.</declaration>
+				<overview>THIS STATEMENT IS ISSUED FOR INFORMATION ONLY IN SUPPORT OF THE</overview>
+			</incident>
+		</tsunami>
+	</hazards>

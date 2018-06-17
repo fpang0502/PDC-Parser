@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEHW40</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>171413</ddhhmm>
+				<awips>TSUHWX</awips>
+				<UGC>
+					<stateID>HI</stateID>
+					<UGCFormat>Z</UGCFormat>
+					<code>001&gt;003-005&gt;009-012&gt;014-016&gt;021-023&gt;026-</code>
+					<purgeTime>171613</purgeTime>
+				</UGC>
+				<bulletinNumber>18</bulletinNumber>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>413 AM HST THU SEP 17 2015</time>
+				<issueTo>EMERGENCY MANAGEMENT IN THE STATE OF HAWAII</issueTo>
+				<subject>TSUNAMI ADVISORY SUPPLEMENT</subject>
+				<brief>A TSUNAMI ADVISORY CONTINUES IN EFFECT FOR THE STATE OF HAWAII.</brief>
+				<event>
+					<earthquake>AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS</earthquake>
+					<time>1254 PM HST 16 SEP 2015</time>
+					<latitude>31.5 SOUTH</latitude>
+					<longitude>72.0 WEST</longitude>
+					<location>NEAR THE COAST OF CENTRAL CHILE</location>
+					<magnitude>
+						<value>8.3</value>
+						<scale>MOMENT</scale>
+					</magnitude>
+				</event>
+				<waveActivity>
+					<wave>
+						<location>HILO HI</location>
+						<latitude>19.7N</latitude>
+						<longitude>155.1W</longitude>
+						<time>1402Z</time>
+						<amplitudeM>0.99M</amplitudeM>
+						<amplitudeFt>3.2FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>KAHULUI MAUI</location>
+						<latitude>20.9N</latitude>
+						<longitude>156.5W</longitude>
+						<time>1353Z</time>
+						<amplitudeM>0.42M</amplitudeM>
+						<amplitudeFt>1.4FT</amplitudeFt>
+						<period>22MIN</period>
+					</wave>
+					<wave>
+						<location>HILO HAWAII</location>
+						<latitude>19.7N</latitude>
+						<longitude>155.1W</longitude>
+						<time>1347Z</time>
+						<amplitudeM>0.70M</amplitudeM>
+						<amplitudeFt>2.3FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>APIA UPOLU WS</location>
+						<latitude>13.8S</latitude>
+						<longitude>171.8W</longitude>
+						<time>1321Z</time>
+						<amplitudeM>0.08M</amplitudeM>
+						<amplitudeFt>0.3FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>MONTEREY HARBOR CA</location>
+						<latitude>36.6N</latitude>
+						<longitude>121.9W</longitude>
+						<time>1301Z</time>
+						<amplitudeM>0.09M</amplitudeM>
+						<amplitudeFt>0.3FT</amplitudeFt>
+						<period>42MIN</period>
+					</wave>
+					<wave>
+						<location>DART 51426</location>
+						<latitude>23.3S</latitude>
+						<longitude>168.3W</longitude>
+						<time>1253Z</time>
+						<amplitudeM>0.02M</amplitudeM>
+						<amplitudeFt>0.1FT</amplitudeFt>
+						<period>14MIN</period>
+					</wave>
+					<wave>
+						<location>DART 46411</location>
+						<latitude>39.3N</latitude>
+						<longitude>127.0W</longitude>
+						<time>1303Z</time>
+						<amplitudeM>0.01M</amplitudeM>
+						<amplitudeFt>0.0FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>PAGO PAGO AS</location>
+						<latitude>14.3S</latitude>
+						<longitude>170.7W</longitude>
+						<time>1254Z</time>
+						<amplitudeM>0.22M</amplitudeM>
+						<amplitudeFt>0.7FT</amplitudeFt>
+						<period>18MIN</period>
+					</wave>
+					<wave>
+						<location>PORT SAN LUIS CA</location>
+						<latitude>35.2N</latitude>
+						<longitude>120.8W</longitude>
+						<time>1245Z</time>
+						<amplitudeM>0.08M</amplitudeM>
+						<amplitudeFt>0.2FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>SANTA MONICA CA</location>
+						<latitude>34.0N</latitude>
+						<longitude>118.5W</longitude>
+						<time>1243Z</time>
+						<amplitudeM>0.15M</amplitudeM>
+						<amplitudeFt>0.5FT</amplitudeFt>
+						<period>32MIN</period>
+					</wave>
+					<wave>
+						<location>OWENGA CHATHAM NZ</location>
+						<latitude>44.0S</latitude>
+						<longitude>176.4W</longitude>
+						<time>1209Z</time>
+						<amplitudeM>0.35M</amplitudeM>
+						<amplitudeFt>1.2FT</amplitudeFt>
+						<period>14MIN</period>
+					</wave>
+					<wave>
+						<location>FISHING ROCK RAOUL</location>
+						<latitude>29.3S</latitude>
+						<longitude>177.9W</longitude>
+						<time>1224Z</time>
+						<amplitudeM>0.05M</amplitudeM>
+						<amplitudeFt>0.2FT</amplitudeFt>
+						<period>10MIN</period>
+					</wave>
+					<wave>
+						<location>BOAT COVE RAOUL IS</location>
+						<latitude>29.3S</latitude>
+						<longitude>177.9W</longitude>
+						<time>1211Z</time>
+						<amplitudeM>0.04M</amplitudeM>
+						<amplitudeFt>0.1FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>PAPEETE TAHITI</location>
+						<latitude>17.5S</latitude>
+						<longitude>149.6W</longitude>
+						<time>1113Z</time>
+						<amplitudeM>0.14M</amplitudeM>
+						<amplitudeFt>0.5FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>TALCAHUANO CL</location>
+						<latitude>36.7S</latitude>
+						<longitude>73.1W</longitude>
+						<time>0253Z</time>
+						<amplitudeM>1.28M</amplitudeM>
+						<amplitudeFt>4.2FT</amplitudeFt>
+						<period>98MIN</period>
+					</wave>
+					<wave>
+						<location>NUKU HIVA MARQUESAS</location>
+						<latitude>8.9S</latitude>
+						<longitude>140.1W</longitude>
+						<time>1133Z</time>
+						<amplitudeM>1.37M</amplitudeM>
+						<amplitudeFt>4.5FT</amplitudeFt>
+						<period>14MIN</period>
+					</wave>
+					<wave>
+						<location>PURETO ANGEL MX</location>
+						<latitude>15.7N</latitude>
+						<longitude>96.5W</longitude>
+						<time>1049Z</time>
+						<amplitudeM>0.37M</amplitudeM>
+						<amplitudeFt>1.2FT</amplitudeFt>
+						<period>04MIN</period>
+					</wave>
+					<wave>
+						<location>HUAHINE PF</location>
+						<latitude>16.7S</latitude>
+						<longitude>151.0W</longitude>
+						<time>1101Z</time>
+						<amplitudeM>0.09M</amplitudeM>
+						<amplitudeFt>0.3FT</amplitudeFt>
+						<period>14MIN</period>
+					</wave>
+					<wave>
+						<location>SALINA CRUZ MX</location>
+						<latitude>16.2N</latitude>
+						<longitude>95.2W</longitude>
+						<time>1017Z</time>
+						<amplitudeM>0.22M</amplitudeM>
+						<amplitudeFt>0.7FT</amplitudeFt>
+						<period>20MIN</period>
+					</wave>
+					<wave>
+						<location>RIKITEA PF</location>
+						<latitude>23.1S</latitude>
+						<longitude>135.0W</longitude>
+						<time>0930Z</time>
+						<amplitudeM>0.34M</amplitudeM>
+						<amplitudeFt>1.1FT</amplitudeFt>
+						<period>16MIN</period>
+					</wave>
+					<wave>
+						<location>CALLAO LA-PUNTA PE</location>
+						<latitude>12.1S</latitude>
+						<longitude>77.2W</longitude>
+						<time>0740Z</time>
+						<amplitudeM>0.52M</amplitudeM>
+						<amplitudeFt>1.7FT</amplitudeFt>
+						<period>34MIN</period>
+					</wave>
+					<wave>
+						<location>CHIAPAS MX</location>
+						<latitude>14.7N</latitude>
+						<longitude>92.4W</longitude>
+						<time>0905Z</time>
+						<amplitudeM>0.19M</amplitudeM>
+						<amplitudeFt>0.6FT</amplitudeFt>
+						<period>26MIN</period>
+					</wave>
+					<wave>
+						<location>RIKITEA PF</location>
+						<latitude>23.1S</latitude>
+						<longitude>135.0W</longitude>
+						<time>0908Z</time>
+						<amplitudeM>0.33M</amplitudeM>
+						<amplitudeFt>1.1FT</amplitudeFt>
+						<period>14MIN</period>
+					</wave>
+					<wave>
+						<location>HUATULCO MX</location>
+						<latitude>15.8N</latitude>
+						<longitude>96.1W</longitude>
+						<time>0809Z</time>
+						<amplitudeM>0.18M</amplitudeM>
+						<amplitudeFt>0.6FT</amplitudeFt>
+						<period>08MIN</period>
+					</wave>
+					<wave>
+						<location>CALDERA CL</location>
+						<latitude>27.1S</latitude>
+						<longitude>70.8W</longitude>
+						<time>0728Z</time>
+						<amplitudeM>1.14M</amplitudeM>
+						<amplitudeFt>3.7FT</amplitudeFt>
+						<period>18MIN</period>
+					</wave>
+					<wave>
+						<location>VALPARAISO CL</location>
+						<latitude>33.0S</latitude>
+						<longitude>71.6W</longitude>
+						<time>0044Z</time>
+						<amplitudeM>1.78M</amplitudeM>
+						<amplitudeFt>5.8FT</amplitudeFt>
+						<period>40MIN</period>
+					</wave>
+					<wave>
+						<location>MATARANI PE</location>
+						<latitude>17.0S</latitude>
+						<longitude>72.1W</longitude>
+						<time>0653Z</time>
+						<amplitudeM>0.22M</amplitudeM>
+						<amplitudeFt>0.7FT</amplitudeFt>
+						<period>20MIN</period>
+					</wave>
+					<wave>
+						<location>JUAN FERNANDEZ</location>
+						<latitude>33.6S</latitude>
+						<longitude>78.8W</longitude>
+						<time>0038Z</time>
+						<amplitudeM>1.21M</amplitudeM>
+						<amplitudeFt>4.0FT</amplitudeFt>
+						<period>08MIN</period>
+					</wave>
+					<wave>
+						<location>SANTACRUZ GALAPAGOS</location>
+						<latitude>0.7S</latitude>
+						<longitude>90.3W</longitude>
+						<time>0643Z</time>
+						<amplitudeM>0.56M</amplitudeM>
+						<amplitudeFt>1.8FT</amplitudeFt>
+						<period>12MIN</period>
+					</wave>
+					<wave>
+						<location>DART 43413</location>
+						<latitude>10.8N</latitude>
+						<longitude>100.1W</longitude>
+						<time>0639Z</time>
+						<amplitudeM>0.02M</amplitudeM>
+						<amplitudeFt>0.1FT</amplitudeFt>
+						<period>40MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32411</location>
+						<latitude>5.0N</latitude>
+						<longitude>90.8W</longitude>
+						<time>0517Z</time>
+						<amplitudeM>0.03M</amplitudeM>
+						<amplitudeFt>0.1FT</amplitudeFt>
+						<period>48MIN</period>
+					</wave>
+					<wave>
+						<location>EASTER CL</location>
+						<latitude>27.2S</latitude>
+						<longitude>109.4W</longitude>
+						<time>0505Z</time>
+						<amplitudeM>0.83M</amplitudeM>
+						<amplitudeFt>2.7FT</amplitudeFt>
+						<period>04MIN</period>
+					</wave>
+					<wave>
+						<location>COQUIMBO CL</location>
+						<latitude>30.0S</latitude>
+						<longitude>71.3W</longitude>
+						<time>0025Z</time>
+						<amplitudeM>4.75M</amplitudeM>
+						<amplitudeFt>15.6FT</amplitudeFt>
+						<period>20MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32402</location>
+						<latitude>26.7S</latitude>
+						<longitude>74.0W</longitude>
+						<time>2334Z</time>
+						<amplitudeM>0.10M</amplitudeM>
+						<amplitudeFt>0.3FT</amplitudeFt>
+						<period>32MIN</period>
+					</wave>
+					<wave>
+						<location>QUIRIQUINA CL</location>
+						<latitude>36.6S</latitude>
+						<longitude>73.1W</longitude>
+						<time>0249Z</time>
+						<amplitudeM>0.83M</amplitudeM>
+						<amplitudeFt>2.7FT</amplitudeFt>
+						<period>88MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32412</location>
+						<latitude>18.0S</latitude>
+						<longitude>86.3W</longitude>
+						<time>0146Z</time>
+						<amplitudeM>0.05M</amplitudeM>
+						<amplitudeFt>0.2FT</amplitudeFt>
+						<period>20MIN</period>
+					</wave>
+					<wave>
+						<location>BUCALEMU CL</location>
+						<latitude>34.6S</latitude>
+						<longitude>72.0W</longitude>
+						<time>0246Z</time>
+						<amplitudeM>0.76M</amplitudeM>
+						<amplitudeFt>2.5FT</amplitudeFt>
+						<period>12MIN</period>
+					</wave>
+					<wave>
+						<location>HUASCO CL</location>
+						<latitude>28.5S</latitude>
+						<longitude>71.2W</longitude>
+						<time>0106Z</time>
+						<amplitudeM>0.77M</amplitudeM>
+						<amplitudeFt>2.5FT</amplitudeFt>
+						<period>12MIN</period>
+					</wave>
+					<wave>
+						<location>SAN FELIX CL</location>
+						<latitude>26.3S</latitude>
+						<longitude>80.1W</longitude>
+						<time>0051Z</time>
+						<amplitudeM>0.69M</amplitudeM>
+						<amplitudeFt>2.3FT</amplitudeFt>
+						<period>08MIN</period>
+					</wave>
+					<wave>
+						<location>CONSTITUCION CL</location>
+						<latitude>35.4S</latitude>
+						<longitude>72.5W</longitude>
+						<time>0124Z</time>
+						<amplitudeM>0.88M</amplitudeM>
+						<amplitudeFt>2.9FT</amplitudeFt>
+						<period>60MIN</period>
+					</wave>
+					<wave>
+						<location>CORRAL CL</location>
+						<latitude>39.9S</latitude>
+						<longitude>73.4W</longitude>
+						<time>0124Z</time>
+						<amplitudeM>0.22M</amplitudeM>
+						<amplitudeFt>0.7FT</amplitudeFt>
+						<period>34MIN</period>
+					</wave>
+					<wave>
+						<location>TOCOPILLA CL</location>
+						<latitude>22.1S</latitude>
+						<longitude>70.2W</longitude>
+						<time>0046Z</time>
+						<amplitudeM>0.12M</amplitudeM>
+						<amplitudeFt>0.4FT</amplitudeFt>
+						<period>38MIN</period>
+					</wave>
+					<wave>
+						<location>CHANARAL CL</location>
+						<latitude>26.4S</latitude>
+						<longitude>70.6W</longitude>
+						<time>0043Z</time>
+						<amplitudeM>1.09M</amplitudeM>
+						<amplitudeFt>3.6FT</amplitudeFt>
+						<period>30MIN</period>
+					</wave>
+					<wave>
+						<location>TALTAL CL</location>
+						<latitude>25.4S</latitude>
+						<longitude>70.5W</longitude>
+						<time>0018Z</time>
+						<amplitudeM>0.25M</amplitudeM>
+						<amplitudeFt>0.8FT</amplitudeFt>
+						<period>38MIN</period>
+					</wave>
+					<wave>
+						<location>DART 32401</location>
+						<latitude>20.5S</latitude>
+						<longitude>73.4W</longitude>
+						<time>0020Z</time>
+						<amplitudeM>0.06M</amplitudeM>
+						<amplitudeFt>0.2FT</amplitudeFt>
+						<period>48MIN</period>
+					</wave>
+					<wave>
+						<location>SAN ANTONIO CL</location>
+						<latitude>33.6S</latitude>
+						<longitude>71.6W</longitude>
+						<time>2358Z</time>
+						<amplitudeM>0.86M</amplitudeM>
+						<amplitudeFt>2.8FT</amplitudeFt>
+						<period>18MIN</period>
+					</wave>
+				</waveActivity>
+				<evaluation>TSUNAMI WAVES THAT CAN BE A HAZARD TO SWIMMERS AND BOATERS AS WELL AS TO PERSONS NEAR THE SHORE AT BEACHES AND IN HARBORS AND MARINAS ARE NOW AFFECTING THE STATE OF HAWAII. THIS HAZARD COULD CONTINUE FOR SEVERAL HOURS. THE SITUATION IS BEING MONITORED CLOSELY AND THE ADVISORY WILL END WHEN THE HAZARD HAS PASSED. </evaluation>
+				<additionalInfo>FURTHER MESSAGES WILL BE ISSUED HOURLY OR SOONER AS CONDITIONS WARRANT UNTIL THE THREAT TO HAWAII HAS PASSED. %% </additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>
