@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<cyclone>
+			<incident>
+				<wmo_id>WTPA22</wmo_id>
+				<station>PHFO</station>
+				<ddhhmm>261450</ddhhmm>
+				<awips>TCMCP2</awips>
+				<stormType>TROPICAL DEPRESSION</stormType>
+				<stormName>GREG</stormName>
+				<advisoryNumber>37</advisoryNumber>
+				<issuer>NWS CENTRAL PACIFIC HURRICANE CENTER HONOLULU HI</issuer>
+				<basinID>EP</basinID>
+				<sequenceID>07</sequenceID>
+				<yearID>2017</yearID>
+				<dateTime>ISSUED BY NWS NATIONAL HURRICANE CENTER MIAMI FL
+</dateTime>

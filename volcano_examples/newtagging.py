@@ -1,5 +1,8 @@
 import sys
 
+# function to run through time and dates within volcano raw files
+# Takes a starting string (stringstart) and a string to read until (stringend)
+# Includes a section of the text to split into two tags
 def tdtag(tag1, tag2, stringstart, stringend, infile, outfile, include="2%"):
 	file_pos = infile.tell()
 	temp = file_pos
@@ -17,8 +20,9 @@ def tdtag(tag1, tag2, stringstart, stringend, infile, outfile, include="2%"):
 			temp = file_pos
 			file_pos = infile.tell()
 			line = infile.readline().strip('\n')
+			line = line.strip(" ")
 			if stringend not in line:
-				outfile.write(line + " ")
+				outfile.write(line)
 		if include == "2%":
 			outfile.write(" %%")
 		elif include == "4%":
@@ -26,6 +30,8 @@ def tdtag(tag1, tag2, stringstart, stringend, infile, outfile, include="2%"):
 		outfile.write("</" + tag2 + ">\n")
 	infile.seek(temp)
 
+# function to run through time and dates within volcano raw files
+# Takes a starting string (stringstart) and a string to read until (stringend)
 def rwline(tag, stringstart, stringend, infile, outfile, include="2%"):
 	file_pos = infile.tell()
 	temp = file_pos
@@ -39,8 +45,9 @@ def rwline(tag, stringstart, stringend, infile, outfile, include="2%"):
 			temp = file_pos
 			file_pos = infile.tell()
 			line = infile.readline().strip('\n')
+			line = line.strip(" ")
 			if stringend not in line:
-				outfile.write(line + " ")
+				outfile.write(line)
 		if include == "2%":
 			outfile.write(" %%")
 		elif include == "4%":
@@ -51,7 +58,7 @@ def rwline(tag, stringstart, stringend, infile, outfile, include="2%"):
 infile=sys.argv[1]
 outfile= "revised" + infile
 wfile=open(outfile,"w+")
-wfile.write("<?xml version='1.0' encoding='UTF-8'?>\n\t<hazards>\n\t\t<vaac>\n\t\t\t<incident>\n")
+wfile.write('<?xml version="1.0" encoding="UTF-8"?>\n\t<hazards>\n\t\t<vaac>\n\t\t\t<incident>\n')
 
 numlines=0
 with open(sys.argv[1], "r") as f:
@@ -82,13 +89,11 @@ with open(sys.argv[1], "r") as f:
 	wfile.write("\t\t\t\t<adv_num>" + temp[2] + "</adv_num>\n")
 	rwline("info_source", "INFO SOURCE: ", "ERUPTION DETAILS: ", f, wfile)
 	rwline("eruption_details", "ERUPTION DETAILS: ", "OBS VA DTG: ", f, wfile)
-	rwline("obs_time", "OBS VA DTG: ", "OBS VA CLD: ", f, wfile)
+	rwline("obs_time", "OBS VA DTG: ", "OBS VA CLD: ", f, wfile, "None")
 	rwline("obs_cld_data", "OBS VA CLD: ", "FCST VA CLD +6HR: ", f, wfile)
 	tdtag("fcst_cld_6hr_time", "fcst_cld_6hr_data", "FCST VA CLD +6HR: ", "FCST VA CLD +12HR: ", f, wfile)
 	tdtag("fcst_cld_12hr_time", "fcst_cld_12hr_data", "FCST VA CLD +12HR: ", "FCST VA CLD +18HR: ", f, wfile)
 	tdtag("fcst_cld_12hr_data", "fcst_cld_18hr_data", "FCST VA CLD +18HR: ", "RMK: ", f, wfile)
-	# rwline("fcst_cld_18hr_time", "FCST VA CLD +18HR: ", "RMK: ", f, wfile, "2%")
-	# #rwline("fcst_cld_18hr_data", " ", "RMK: ", f, wfile)
 	rwline("remarks", "RMK: ", "NXT ADVISORY: ", f, wfile)
 	rwline("nxt_adv","NXT ADVISORY:", "", f, wfile, "4%")
 	wfile.write("\t\t\t</incident>\n\t\t</vaac>\n\t</hazards>")

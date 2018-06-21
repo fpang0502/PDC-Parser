@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<cyclone>
+			<incident>
+				<wmo_id>WTNT25</wmo_id>
+				<station>KNHC</station>
+				<ddhhmm>180854</ddhhmm>
+				<awips>TCMAT5</awips>
+				<stormType>POST-TROPICAL CYCLONE</stormType>
+				<stormName>NICOLE</stormName>
+				<advisoryNumber>57</advisoryNumber>
+				<issuer>NWS NATIONAL HURRICANE CENTER MIAMI FL</issuer>
+				<basinID>AL</basinID>
+				<sequenceID>15</sequenceID>
+				<yearID>2016</yearID>
+				<dateTime>0900 UTC TUE OCT 18 2016
+</dateTime>
+				<latestDetails>
+					<latitude>47.1N</latitude>
+					<longitude>39.5W</longitude>
+					<day>18</day>
+					<time>0900</time>
+					<timeZone>Z</timeZone>
+					<accuracy>20</accuracy>
+					<movement>
+						<direction>30</direction>
+						<speed>27</speed>
+					</movement>
+					<minPressure>969</minPressure>
+					<maxWinds>55</maxWinds>
+					<gusts>65</gusts>
+					<radii50Knot>
+						<NEradii>120</NEradii>
+						<SEradii>150</SEradii>
+						<SWradii>150</SWradii>
+						<NWradii>0</NWradii>
+					</radii50Knot>
+					<radii34Knot>
+						<NEradii>270</NEradii>
+						<SEradii>300</SEradii>
+						<SWradii>300</SWradii>
+						<NWradii>150</NWradii>
+					</radii34Knot>
+					<radii12ftSeas>
+						<NEradii>480</NEradii>
+						<SEradii>720</SEradii>
+						<SWradii>840</SWradii>
+						<NWradii>420</NWradii>
+					</radii12ftSeas>
+				</latestDetails>
+				<forecast>
+					<day>18</day>
+					<time>1800</time>
+					<timeZone>Z</timeZone>
+					<latitude>51.7N</latitude>
+					<longitude>36.7W...POST-TROP/EXTRATROP</longitude>
+					<maxWinds>60</maxWinds>
+					<gusts>75</gusts>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>180</NEradii>
+						<SEradii>240</SEradii>
+						<SWradii>210</SWradii>
+						<NWradii>180</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>360</NEradii>
+						<SEradii>420</SEradii>
+						<SWradii>360</SWradii>
+						<NWradii>300</NWradii>
+					</radii34Knot>
+				</forecast>
+				<forecast>
+					<day>19</day>
+					<time>0600</time>
+					<timeZone>Z</timeZone>
+					<latitude>57.0N</latitude>
+					<longitude>35.5W...POST-TROP/EXTRATROP</longitude>
+					<maxWinds>60</maxWinds>
+					<gusts>75</gusts>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>240</NEradii>
+						<SEradii>240</SEradii>
+						<SWradii>300</SWradii>
+						<NWradii>300</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>540</NEradii>
+						<SEradii>540</SEradii>
+						<SWradii>480</SWradii>
+						<NWradii>540</NWradii>
+					</radii34Knot>
+				</forecast>
+				<forecast>
+					<day>19</day>
+					<time>1800</time>
+					<timeZone>Z</timeZone>
+					<latitude>62.0N</latitude>
+					<longitude>33.0W...POST-TROP/EXTRATROP</longitude>
+					<maxWinds>60</maxWinds>
+					<gusts>75</gusts>
+					<windRadii>50 KT</windRadii>
+					<radii50Knot>
+						<NEradii>240</NEradii>
+						<SEradii>240</SEradii>
+						<SWradii>420</SWradii>
+						<NWradii>0</NWradii>
+					</radii50Knot>
+					<windRadii>34 KT</windRadii>
+					<radii34Knot>
+						<NEradii>480</NEradii>
+						<SEradii>540</SEradii>
+						<SWradii>540</SWradii>
+						<NWradii>240</NWradii>
+					</radii34Knot>
+				</forecast>
+				<forecast>
+					<day>20</day>
+					<time>0600</time>
+					<timeZone>Z</timeZone>

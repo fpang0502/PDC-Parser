@@ -2,3 +2,32 @@
 	<hazards>
 		<vaac>
 			<incident>
+				<vaac_id>FVXX23</vaac_id>
+				<vaac_code>KNES</vaac_code>
+				<issued_id>230800</issued_id>
+				<issued_time>20180223/0800Z</issued_time>
+				<vaac>WASHINGTON</vaac>
+				<volcano_name>FUEGO</volcano_name>
+				<volcano_id>342090</volcano_id>
+				<position>N1428 W09052</position>
+				<area>GUATEMALA</area>
+				<summit_elev>3763</summit_elev>
+				<adv_num>2018/167</adv_num>
+				<info_source>GOES-EAST. NWP MODELS. CIMSS VOLCAT.VOLCANO WEB CAMERA.    %%</info_source>
+				<eruption_details>GOING VA EM  %%</eruption_details>
+				<obs_time>23/0730Z  %%</obs_time>
+				<obs_cld_data>FC/FL170 N1430 W09055 - N1426 W09055- N1416 W09119 - N1426 W09122 - N1430 W09055 MOV W 10-15KT    %%</obs_cld_data>
+				<fcst_cld_6hr_time>23/1330Z</fcst_cld_6hr_time>
+				<fcst_cld_6hr_data>SFC/FL170 N1430 W09055 
+- N1426 W09054 - N1416 W09119 - N1426 W09123 - N1430 W09055    %%</fcst_cld_6hr_data>
+				<fcst_cld_12hr_time>3/1930Z</fcst_cld_12hr_time>
+				<fcst_cld_12hr_data>SFC/FL170 N1431 
+W09056 - N1426 W09054 - N1415 W09119 - N1426 W09122 - N1431 W09056    %%</fcst_cld_12hr_data>
+				<fcst_cld_12hr_data>24/0130Z</fcst_cld_12hr_data>
+				<fcst_cld_18hr_data>SFC/FL170 NO ASH EXP 
+  %%</fcst_cld_18hr_data>
+				<remarks>INTERMITTENT VA EMS SEEN ON STLT IMAGERY MOVWSW APPROX 25 NM AWAY FM THE SUMMIT. MODELS SUGGEST GENERAL WESTWARD MOV THRU T+12 HRS.  ...KIM   %%</remarks>
+				<nxt_adv>WILL BE ISSUED BY 20180223/1400Z %% %%</nxt_adv>
+			</incident>
+		</vaac>
+	</hazards>
