@@ -2,7 +2,7 @@ README
 
 I will fix this to work later as one script file...as for now:
 
-*The text file needs to casedown*
+*The text file needs to casedown* (will implement a method doing so)
 
 1) run the raw text file into the pText_Rec.py script which will then create two output files which contain the lines to be parsed and non-parsed
 
@@ -15,4 +15,4 @@ I will fix this to work later as one script file...as for now:
 	- there will be two files…one being the text file and the other being a pdf
 	of the tree
 
-2) next use the sortDepEle.py file with that output text file created by the importSD.py file
+3) next use the sortDepEle.py file with that output text file created by the importSD.py file
