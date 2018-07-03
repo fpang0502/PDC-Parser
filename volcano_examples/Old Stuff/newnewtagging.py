@@ -14,12 +14,14 @@ labels_list2 = ["FCST VA CLD +6HR: ", "FCST VA CLD +12HR: ", "FCST VA CLD +18HR:
 labels_list3 = ["RMK: ", "NXT ADVISORY: "]
 
 def print4tag(tag, text, outfile=wfile, include ="NONE"):
+	"Write to file with 4 tabs"
 	if include=="2%":
 		outfile.write("\t\t\t\t<" + tag + ">" + text + r"  %%</" + tag + ">\n")
 	else:
 		outfile.write("\t\t\t\t<" + tag + ">" + text + "</" + tag + ">\n")
 
 def getparagraph(infile):
+	"Get a paragraph"
 	paragraph = ""
 	line = infile.readline()
 	while len(line.strip()) != 0:

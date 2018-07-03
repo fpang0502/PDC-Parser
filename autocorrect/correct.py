@@ -4,7 +4,6 @@ from autocorrect import spell
 
 num = re.compile('.*\d.*')
 period = re.compile('(\w)\.\s')
-#triperiod = re.compile(r'(\.).*\1.*\1')
 triperiod = re.compile('(\.){3}')
 
 corrected=""
