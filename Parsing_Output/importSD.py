@@ -46,7 +46,7 @@ def main():
 		lines = f.readline().strip(",.'")
 		
 		while lines:
-			print("line "+str(counter)+": "+str(lines))
+            #print("line "+str(counter)+": "+str(lines))
 			mySent = getTypeD(str(lines))
 
 			if os.path.isfile(textName):

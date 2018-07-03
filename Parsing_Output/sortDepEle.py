@@ -1,6 +1,7 @@
 import subprocess, sys, re
 p = re.compile(r'\d+')
 
+
 def returnDependencies():
 	#input = sys.argv[1]
 	#output = input+"_output"
@@ -50,7 +51,7 @@ def main():
 	wordList = checkWord(theList)
 	depList = checkDepnd(theList)
 
-	""" This is to check to see if the elements were sorted correctly
+	#This is to check to see if the elements were sorted correctly
 
 	print("whole list:")
 	printListofLines(theList)
@@ -60,7 +61,7 @@ def main():
 	print("\n")
 	print("depList:")
 	printListofLines(depList)
-	"""
+	
 if __name__ == "__main__":
 	main()
 
