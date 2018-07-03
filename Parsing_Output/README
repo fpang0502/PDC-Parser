@@ -5,7 +5,8 @@ I will fix this to work later as one script file...as for now:
 1) first use the importSD.py file with a text file (the raw_text)
 	- be sure to have set environmental path to englishPCFG.ser.gz
 	- this will create an output text file with the typedDependency data
-	- the output files will be created in the current directory that you are 		working in
+	- the output files will be created in the current directory that you are
+	working in 
 	- there will be two files…one being the text file and the other being a pdf
 	of the tree
 
