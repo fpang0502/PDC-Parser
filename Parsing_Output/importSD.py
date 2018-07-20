@@ -24,41 +24,41 @@ def getTypeD(input): # returns our the string with the dependency tags
 	return sS
 
 
-def createDepData(tag_sent, name):
+def createDepData(tag_sent):
 	
 	data = sd.convert_tree(tag_sent) # method from the PyStanfordDependencies 0.3.1 package
-	"""
-	for token in data:
-		print(token)
 
-	"""
-	dg = data.as_dotgraph()
-	#print(dg)
-
-	dg.render(name+'_depData') #creates the text and pdf tree file of parsed sentence
+	return data
 
 
-def main():
-	with open(sys.argv[1], 'r') as f:
-		
-		textName = sys.argv[1]
-		counter=0
-		lines = f.readline().strip(",.'")
-		
-		while lines:
-            #print("line "+str(counter)+": "+str(lines))
-			mySent = getTypeD(str(lines))
+def analyzeData(myList):
 
-			if os.path.isfile(textName):
-				createDepData(mySent, textName+str(counter))
-				counter+=1
-			elif os.path.isfile(textName)==False:
-				createDepData(mySent, textName)
+	master_list =[]
+	
+	for x in myList:
+		dict_list = []
+		mySent = getTypeD(x)
+		data = createDepData(mySent)
+		for y in range(len(data)): # access each token in data
+			data_dict = {}
+			for z in range(len(data[y])): #access each token's content
+				
+				if str(z)=='0':
+					data_dict.update({'index': data[y][z]})
+				elif str(z)=='1':
+					data_dict.update({'word': data[y][z]})
+				elif str(z)=='6':
+					data_dict.update({'head': data[y][z]})
+				elif str(z)=='7':
+					data_dict.update({'deprel': data[y][z]})
 
-			lines = f.readline().strip(",.'")
+			dict_list.append(data_dict)
 
-		f.close()
+		master_list.append(dict_list)
 
 
-if __name__ == "__main__":
-	main()
+
+	return master_list
+
+
+
