@@ -2,6 +2,7 @@
 import sys
 
 def createLCV(currlist):
+	'puts everything to lower case'
 	mod_list = []
 	
 	for x in currlist:

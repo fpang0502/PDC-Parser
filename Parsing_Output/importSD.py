@@ -13,25 +13,26 @@ sd = StanfordDependencies.get_instance(backend='subprocess')
 
 
 
-def getTypeD(input): # returns our the string with the dependency tags
+def getTypeD(input):
+	'returns our the string with the dependency tags'
 	sS = ""
 	myList = list(parser.raw_parse(input))
 
-	
-	for l in myList: # store into list which so that we can convert it
+	for l in myList:
 		sS+=str(l)
 
 	return sS
 
 
 def createDepData(tag_sent):
-	
-	data = sd.convert_tree(tag_sent) # method from the PyStanfordDependencies 0.3.1 package
+	'method from the PyStanfordDependencies 0.3.1 package'
+	data = sd.convert_tree(tag_sent) 
 
 	return data
 
 
 def analyzeData(myList):
+	'creates a list of dictionaries and stores the data of the index, word, head (which word points this the current word) and the typed dependency'
 
 	master_list =[]
 	

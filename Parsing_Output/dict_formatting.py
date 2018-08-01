@@ -13,10 +13,11 @@ w = re.compile(r'[a-z][a-z][a-z][a-z][0-9][0-9]')
 s = re.compile(r'[a-z]+')
 dd = re.compile(r'[0-9]+')
 
-ot = re.compile(r'origin time')
-l = re.compile(r'location')
-c = re.compile(r'coordinates')
-m = re.compile(r'magnitude')
+ot = re.compile(r'[ ]*origin time')
+l = re.compile(r'[ ]*location')
+c = re.compile(r'[ ]*coordinates')
+m = re.compile(r'[ ]*magnitude')
+dep = re.compile(r'[ ]*depth')
 
 val = re.compile(r'[0-9]+.[0-9]')
 ns = re.compile(r'[0-9]+.[0-9] [a-z][a-z][a-z][a-z][a-z]')
@@ -25,6 +26,7 @@ ew = re.compile(r'[0-9]+.[0-9] [a-z][a-z][a-z][a-z]')
 
 
 def convertCode(code):
+	'converts the code tag by replacing the > signs to &gt;'
 	conversion = ''
 	for v in range(len(code)):
 		#print(len(k[1]))
@@ -40,9 +42,11 @@ def convertCode(code):
 
 #should have 8 things
 def readHeaderList(hlist):
+	'creates dictionaries based on tags for the header section'
 	h_tag = {}
 
 	for x in hlist:
+		#print('HEADER List: '+str(x))
 		if hf3.match(x):
 			thisList = x.split()
 			for i in thisList:
@@ -64,31 +68,92 @@ def readHeaderList(hlist):
 
 	return h_tag
 
+
+def extractInfoLines(currList):
+	myString = ''
+	for x in range(len(currList)):
+		if (x!=1) and (x!=0):
+			myString += str(currList[x])+' '
+			myString.strip()
+
+	return myString
+
+
+
 # should have 8/9 things
 def readNPList(np):
+	'creates dictionaries based on tags for the non-parsed section'
 	np_tag ={}
 
 	for x in np:
 		#print('readNPList: '+str(x))
 		if p.match(x): 
+			#print("WENT INTO THE TIME: "+str(x))
+
 			np_tag.update({'time':x.strip()})
-		elif to.search(x):
-			np_tag.update({'issueTo':x[5:].strip()})
-		elif sub.search(x):
-			np_tag.update({'subject':x[10:].strip()})
+
+		elif to.match(x):
+			#print("WENT INTO THE ISSUETO: "+str(x))
+			currList = x.split()
+
+			myString = extractInfoLines(currList)
+
+
+
+			np_tag.update({'issueTo':myString.strip()})
+
+		elif sub.match(x):
+			#print("WENT INTO THE SUBJECT: "+str(x))
+			currList = x.split()
+			myString = extractInfoLines(currList)
+			np_tag.update({'subject':myString.strip()})
+
 		elif ot.search(x):
-			np_tag.update({'o_time':x[17:].strip()})
+			#print("WENT INTO THE E_TIME: "+str(x))
+			currList = x.split()
+			
+			myString = ''
+			for x in range(len(currList)):
+				if (x!=1) and (x!=0) and (x!=2):
+					myString += str(currList[x])+' '
+					myString.strip()
+
+			np_tag.update({'e_time':myString})
+
+		elif dep.search(x):
+			currList = x.split()
+			myString =''
+			for x in range(len(currList)):
+				if x == 2:
+					myString += currList[x]+" "+currList[x+1]+" "
+			
+			np_tag.update({'depth':myString})
+
 		elif c.search(x):
-			thatList = x.split("  ")
-			for i in thatList:
-				if ns.search(i):
-					np_tag.update({'latitude':i[15:].strip()})
-				elif ew.search(i):
-					np_tag.update({'longitude':i.strip()})
+			#print("WENT INTO THE COORDINATES: "+str(x))
+			thatList = x.split()
+			longString = ''
+			latString = ''
+
+			for x in range(len(thatList)):
+				if x == 2:
+					latString += thatList[x]+' '+thatList[x+1]
+				elif x==4:
+					longString += thatList[x]+' '+thatList[x+1]
+
+			np_tag.update({'latitude':latString}) # N/S		
+			np_tag.update({'longitude':longString}) # E/W
+
 		elif l.search(x):
-			np_tag.update({'location':x[17:].strip()})
+			#print("WENT INTO THE LOCATION: "+str(x))
+			currList = x.split()
+
+			myString = extractInfoLines(currList)
+
+			np_tag.update({'location':myString})
 
 		elif m.search(x):
+			#print("WENT INTO THE VALUE: "+str(x))
 			thisList = x.split()
 			for i in thisList:
 				if val.match(i):

@@ -1,18 +1,7 @@
 README
 
-I will fix this to work later as one script file...as for now:
+Just run the file called “newMain.py”
 
-*The text file needs to casedown* (will implement a method doing so)
+in terms of working for the other files (i.e. cyclones and volcano) you will need to make a list of tag ordering (look at “printingOutput.py” to see an example of the tsunami tag structure)
 
-1) run the raw text file into the pText_Rec.py script which will then create two output files which contain the lines to be parsed and non-parsed
-
-
-2) use the importSD.py file with the “name”_p_text
-	- be sure to have set environmental path to englishPCFG.ser.gz
-	- this will create an output text file with the typedDependency data
-	- the output files will be created in the current directory that you are
-	working in 
-	- there will be two files…one being the text file and the other being a pdf
-	of the tree
-
-3) next use the sortDepEle.py file with that output text file created by the importSD.py file
+*still need to work on a couple more variables of text files… will be finished by friday

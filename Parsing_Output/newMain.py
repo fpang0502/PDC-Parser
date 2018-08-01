@@ -5,6 +5,7 @@ from new_testing_1step import *
 from corr_format import *
 from lowerCaseConvert import *
 from dict_formatting import *
+from printingOutput import *
 
 def main():
 	# read in the text file
@@ -85,8 +86,10 @@ def main():
 		p_e = analyzeData(lc_e)
 		p_ai = analyzeData(lc_ai)
 
+		counter = 0
 		for l in p_p:
-			print("AFTER PARSED METHOD - parse_list: "+str(l))
+			print("AFTER PARSED METHOD - parse_list"+str(counter)+": "+str(l))
+			counter +=1
 		print("length of p_p: "+str(len(p_p)))
 
 
@@ -118,7 +121,7 @@ def main():
 
 ################# FOR THE PART WE DONT PARSE ####################
 
-	# create dictionary that recognizes the text based on regular expressions: USING re.serach('target','our sentence')
+	# create dictionary that recognizes the text based on regular expressions: USING re.search('target','our sentence')
 		# if it starts with 4 number: 'time'
 		# if it contains with to: 'issueTo'
 		# if it contains with subject: 'subject'
@@ -148,13 +151,11 @@ def main():
 	# so need to figure how to recognize it...
 
 ##################################################################
-	
-		test_sentence = recreateSent(p_p, 0)
-		print(test_sentence)
-		
-		my_bool = checkForTag('root','number',p_p,0)
-		print(str(my_bool))
-		
+
+		createTag(tsunami_structure, tag_space, non_parse_tag, header_tag, lc_e, lc_ai, p_p)
+
+		sent1 = searchTagInParseDict(p_p, tag_space, 'earthquake')
+		print("sent1: "+sent1)
 
 if __name__ == '__main__':
 	main()

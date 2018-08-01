@@ -9,8 +9,8 @@ def printListofLines(list):
 
 #if str(wlist[x][1]) == '[label="."]':
 
-#creates the sentence which is to associate the tags with the sentence
 def recreateSent(myList, num):
+	'creates the sentence from the dictionary list'
 	sentence = ""
 	cd = myList[num]
 	for x in cd:
@@ -20,8 +20,9 @@ def recreateSent(myList, num):
 
 
 
-#first check if the depList contains the tag we want
+
 def checkForTag(tag, word, currlist, num):
+	'first check if the depList contains the tag we want'
 	cd = currlist[num]
 	for y in cd:
 		if y['deprel'] == tag and y['word'] == word:
