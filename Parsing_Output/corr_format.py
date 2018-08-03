@@ -14,18 +14,18 @@ def fixListFormat(thisList):
 		fixed_spacing = re.sub(spaces, " ", element)
 
 
-		#if gap.search(x):
-		corrSent += fixed_spacing + " "
-
-		#else:
-		#	corrSent += fixed_spacing + " " 	
-
+		
+		corrSent += " "+fixed_spacing
+		corrSent = corrSent.strip()
+		 	
 
 
 
+
+	corrSent = re.sub(spaces, " ", corrSent)
 	
-	corrSent = corrSent.strip()
 	newList.append(corrSent)
+
 
 	return newList
 

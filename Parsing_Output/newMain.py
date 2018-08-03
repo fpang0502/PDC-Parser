@@ -49,58 +49,59 @@ def main():
 		header = []
 		evaluate = []
 		add_info = []
+		test = []
 
 		top_half = splitFirstHalf(f)
-		bot_half = splitSecondHalf(f)	
+		top_bool = checkIfTest(top_half)
+		if top_bool != True:
+			bot_half = splitSecondHalf(f)
+			sepLists(top_half, non_parse, parse, header)
+			sepSecList(bot_half, evaluate, add_info)
 
-		sepLists(top_half, non_parse, parse, header)
-		sepSecList(bot_half, evaluate, add_info)
+			lc_np = createLCV(non_parse)
+			lc_p = createLCV(parse)
+			lc_h = createLCV(header)
 
-		lc_np = createLCV(non_parse)
-		lc_p = createLCV(parse)
-		lc_h = createLCV(header)
+			lc_e = fixListFormat(evaluate)
+			lc_ai = fixListFormat(add_info)
 
-		lc_e = fixListFormat(evaluate)
-		lc_ai = fixListFormat(add_info)
+			
+			for l in lc_np:
+				print("non_parse: "+str(l))
 
-
-		for l in lc_np:
-			print("non_parse: "+str(l))
-
-		for l in lc_p:
-			print("parse_list: "+str(l))
+			for l in lc_p:
+				print("parse_list: "+str(l))
 	
-		for l in lc_h:
-			print("head_list: "+str(l))
+			for l in lc_h:
+				print("head_list: "+str(l))
 
-		print("eval:"+str(lc_e)+'\n')
+			print("eval:"+str(lc_e)+'\n')
 
-		print("additional info:"+str(lc_ai)+'\n')
-
-
-		print("finished separating!\n")
-
-	# run the list through the importSD method
-
-		p_p = analyzeData(lc_p)
-		p_e = analyzeData(lc_e)
-		p_ai = analyzeData(lc_ai)
-
-		counter = 0
-		for l in p_p:
-			print("AFTER PARSED METHOD - parse_list"+str(counter)+": "+str(l))
-			counter +=1
-		print("length of p_p: "+str(len(p_p)))
+			print("additional info:"+str(lc_ai)+'\n')
 
 
-		for l in p_e:
-			print("AFTER PARSED METHOD - eval_list: "+str(l))
-		print("length of p_e: "+str(len(p_e)))
+			print("finished separating!\n")
+			
+			# run the list through the importSD method
+			p_p = analyzeData(lc_p)
+			p_e = analyzeData(lc_e)
+			p_ai = analyzeData(lc_ai)
+			"""
+			counter = 0
+			for l in p_p:
+				print("AFTER PARSED METHOD - parse_list"+str(counter)+": "+str(l))
+				counter +=1
+			print("length of p_p: "+str(len(p_p)))
 
-		for l in p_ai:
-			print("AFTER PARSED METHOD - add_info_list: "+str(l))
-		print("length of p_ai: "+str(len(p_ai))+'\n')
 
+			for l in p_e:
+				print("AFTER PARSED METHOD - eval_list: "+str(l))
+			print("length of p_e: "+str(len(p_e)))
+
+			for l in p_ai:
+				print("AFTER PARSED METHOD - add_info_list: "+str(l))
+			print("length of p_ai: "+str(len(p_ai))+'\n')
+			"""
 
 ###################### FOR THE HEADER ############################
 
@@ -110,14 +111,15 @@ def main():
 
 #################################################################
 
-		header_tag = readHeaderList(lc_h)
+			header_tag = readHeaderList(lc_h)
 
-		#CHECKING OUTPUT
-		print("header_tag printing...")
-		for k,v in header_tag.items():
-			print(k+":",v)
-		print("header_tag length: "+str(len(header_tag))+'\n')
-
+			#CHECKING OUTPUT
+			"""
+			print("header_tag printing...")
+			for k,v in header_tag.items():
+				print(k+":",v)
+			print("header_tag length: "+str(len(header_tag))+'\n')
+			"""
 
 ################# FOR THE PART WE DONT PARSE ####################
 
@@ -136,13 +138,13 @@ def main():
 
 ##################################################################
 		
-		non_parse_tag = readNPList(lc_np)
-
-		print("non_parse_tag printing...")
-		for k,v in non_parse_tag.items():
-			print(k+":",v)
-		print("non_parse_tag length: "+str(len(non_parse_tag))+'\n')
-	
+			non_parse_tag = readNPList(lc_np)
+			
+			print("non_parse_tag printing...")
+			for k,v in non_parse_tag.items():
+				print(k+":",v)
+			print("non_parse_tag length: "+str(len(non_parse_tag))+'\n')
+			wave_np = waveRecSep(lc_np)
 
 ########### FOR THE EVALUATION/ADDITIONAL SECTION ################
 
@@ -152,10 +154,46 @@ def main():
 
 ##################################################################
 
-		createTag(tsunami_structure, tag_space, non_parse_tag, header_tag, lc_e, lc_ai, p_p)
+			createTag(tsunami_structure, tag_space, non_parse_tag, header_tag, lc_e, lc_ai, p_p, wave_np)
 
-		sent1 = searchTagInParseDict(p_p, tag_space, 'earthquake')
-		print("sent1: "+sent1)
+
+		else: #when it is a test file
+			print("we doing test method")
+			splitTest(top_half, test)
+
+			for x in test:
+				print("test list: "+"["+str(x)+"]")
+
+			""" # JUST UNCOMMENTED FOR NOW TO DEBUG
+
+			sepTestList(test, header, non_parse, parse)
+			lc_np = createLCV(non_parse)
+			lc_p = createLCV(parse)
+			lc_h = createLCV(header)
+
+			header_tag = readHeaderList(lc_h)
+			print("header_tag printing...")
+			for k,v in header_tag.items():
+				print(k+":",v)
+			print("header_tag length: "+str(len(header_tag))+'\n')
+
+			p_p = analyzeData(lc_p)
+			non_parse_tag = readNPList(lc_np)
+			print("non_parse_tag printing...")
+			for k,v in non_parse_tag.items():
+				print(k+":",v)
+			print("non_parse_tag length: "+str(len(non_parse_tag))+'\n')
+
+			counter =0
+			for l in p_p:
+				print("AFTER PARSED METHOD - parse_list"+str(counter)+": "+str(l))
+				counter +=1
+			print("length of p_p: "+str(len(p_p)))
+
+			createTestTag(tsunami_test_structure, tag_space, non_parse_tag, header_tag, p_p)
+			"""
+
+		
 
 if __name__ == '__main__':
 	main()

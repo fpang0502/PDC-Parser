@@ -22,17 +22,41 @@ mg = re.compile(r'MAGNITUDE')
 
 tc = re.compile(r'TEST')
 nt = re.compile(r'NOTICE')
+ms = re.compile(r'MESSAGE')
 ds = re.compile(r'--+')
+
+star = re.compile(r'\*')
 
 
 def checkIfTest(thislist):
 
-	myBool = False
+	
 	for x in thislist:
 		if tc.search(x):
-			myBool = True
+			return True
 
-	return myBool
+	return False
+
+
+def splitTest(thisList, testlist):
+	
+	string = ''
+	for x in thisList:
+		print("x: "+x)
+		if x == '\n':
+			if string != '':
+				#print(x+" DOES EQUAL TO NEW LINE")
+				#print("STRING SENT TO LIST")
+				#print("---------------")
+				testlist.append(string.strip())
+				string = ''
+		else:
+			#print("["+x+"]"+" doesnt equal new line or space new line")
+			#print("string: "+string)
+			#print("---------------")
+			string += str(x).strip(' \n') + " "
+
+	return testlist
 
 
 def splitFirstHalf(file):
@@ -40,8 +64,10 @@ def splitFirstHalf(file):
 	first_half = []
 	
 	lines = file.readline()
+
 	while lines:
 		#print("splitFirstHalf method: "+lines)
+		lines = re.sub(star, "", lines)
 		if lines=='EVALUATION\n':
 			#print("we break")
 			break
@@ -59,11 +85,23 @@ def splitSecondHalf(file):
 	lines = file.readline()
 	#print("splitSecondHalf method: "+lines)
 	while lines:
+		lines = re.sub(star, "", lines)
 		second_half.append(lines)
 		lines = file.readline()
 		#print("splitSecondHalf method: "+lines)
 	file.close()
 	return second_half
+
+def sepTestList(testlist, header, nplist, plist):
+	for l in testlist:
+		if l == '$$\n':
+			continue
+		elif h1.match(l) or h2.match(l) or h3.match(l) or h4.match(l):
+			header.append(l)
+		elif p.match(l):
+			nplist.append(l)
+		else:
+			plist.append(l) 
 
 
 def sepLists(first, nplist, plist, header):
@@ -78,7 +116,6 @@ def sepLists(first, nplist, plist, header):
 			header.append(l)
 
 		elif p.match(l) or s.match(l) or to.match(l) or sub.match(l) or org.search(l) or coord.search(l) or lc.search(l) or mg.search(l):
-			#print("we go into THIRD statement: "+str(l))
 			nplist.append(l)
 
 		elif nope1.search(l):

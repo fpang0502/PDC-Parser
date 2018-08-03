@@ -20,8 +20,24 @@ m = re.compile(r'[ ]*magnitude')
 dep = re.compile(r'[ ]*depth')
 
 val = re.compile(r'[0-9]+.[0-9]')
-ns = re.compile(r'[0-9]+.[0-9] [a-z][a-z][a-z][a-z][a-z]')
-ew = re.compile(r'[0-9]+.[0-9] [a-z][a-z][a-z][a-z]')
+coor_val = re.compile(r'[0-9]+.[0-9]$')
+ns = re.compile(r'[a-z][a-z][a-z][a-z][a-z]$')
+ew = re.compile(r'[a-z][a-z][a-z][a-z]$')
+
+
+lat = re.compile(r'[0-9]+.[0-9][n:s]$')
+lon = re.compile(r'[0-9]+.[0-9][e:w]$')
+w_time = re.compile(r'[0-9][0-9][0-9][0-9][z]$')
+meter = re.compile(r'[0-9]+.[0-9]+[m]$')
+ft = re.compile(r'[0-9]+.[0-9]+[ft]')
+minute = re.compile(r'[0-9]+[min]')
+wave_rec = re.compile(r'[ ]*[a-z]+[ ][ ]+[0-9]+.[0-9][a-z]')
+wave_rec2 = re.compile(r'[ ]*[0-9]+[ ][ ]+[0-9]+.[0-9][a-z]')
+w_loc1 = re.compile(r'[a-z]+[ ][a-z]+$')
+w_loc2 = re.compile(r'[a-z]+[ ][0-9]+$')
+word = re.compile(r'[a-z]+$')
+digits = re.compile(r'[0-9]+$')
+
 
 
 
@@ -111,23 +127,37 @@ def readNPList(np):
 		elif ot.search(x):
 			#print("WENT INTO THE E_TIME: "+str(x))
 			currList = x.split()
-			
+			"""
+			for x in currList:
+				print("currList: "+x)
+			"""
+
 			myString = ''
 			for x in range(len(currList)):
-				if (x!=1) and (x!=0) and (x!=2):
-					myString += str(currList[x])+' '
-					myString.strip()
-
-			np_tag.update({'e_time':myString})
+				if p.match(currList[x]): #if we get digits which correspond to the time
+					while x<len(currList):
+						#print("X: "+str(x))
+						myString += str(currList[x])+" "
+						x+=1
+					break
+		
+			np_tag.update({'e_time':myString.strip()})
 
 		elif dep.search(x):
 			currList = x.split()
+			"""
+			for x in currList:
+				print("depth:"+x)
+			"""
+
 			myString =''
 			for x in range(len(currList)):
-				if x == 2:
-					myString += currList[x]+" "+currList[x+1]+" "
+				if p.match(currList[x]) and str(currList[x+1]) == 'km':
+					myString += str(currList[x])+" "+str(currList[x+1])
+
+					
 			
-			np_tag.update({'depth':myString})
+			np_tag.update({'depth':myString.strip()})
 
 		elif c.search(x):
 			#print("WENT INTO THE COORDINATES: "+str(x))
@@ -136,21 +166,40 @@ def readNPList(np):
 			latString = ''
 
 			for x in range(len(thatList)):
-				if x == 2:
-					latString += thatList[x]+' '+thatList[x+1]
-				elif x==4:
-					longString += thatList[x]+' '+thatList[x+1]
-
+				#print("COOR: "+str(x)+" "+str(thatList[x]))
+				
+				if coor_val.match(thatList[x]):
+					if ns.match(thatList[x+1]):
+						latString += thatList[x]+' '+thatList[x+1]
+					elif ew.match(thatList[x+1]):
+						longString += thatList[x]+' '+thatList[x+1]
+			
 			np_tag.update({'latitude':latString}) # N/S		
 			np_tag.update({'longitude':longString}) # E/W
 
-		elif l.search(x):
+		elif l.match(x):
 			#print("WENT INTO THE LOCATION: "+str(x))
 			currList = x.split()
+			
+			myString = ''
+			for x in range(len(currList)):
+				if currList[x]=='location' and currList[x+1]!='-':
+					count = 1
+					while count<len(currList):
+						myString += str(currList[count])+' '
+						count += 1
 
-			myString = extractInfoLines(currList)
+				elif currList[x]=='location' and currList[x+1]=='-':
+					count = 2
+					while count<len(currList):
+						myString += str(currList[count])+' '
+						count +=1
 
-			np_tag.update({'location':myString})
+	
+			
+			
+
+			np_tag.update({'location':myString.strip()})
 
 		elif m.search(x):
 			#print("WENT INTO THE VALUE: "+str(x))
@@ -160,6 +209,59 @@ def readNPList(np):
 					np_tag.update({'value':i.strip()})
 				elif hf4.match(i):
 					np_tag.update({'scale':i.strip()})
+				 
 
 	return np_tag
+
+
+def waveRecSep(np):
+	master_wave_data = []
+
+	for x in np:
+
+		if wave_rec.search(x) or wave_rec2.search(x):
+			#print("x in NP: "+str(x))
+			curr_wave = {}
+			thisList = x.split()
+			location_word_list = []
+			for i in thisList:
+				#print("i in thisList: "+str(i))
+				if i == '\n' or i==' \n':
+					continue
+				elif lat.match(i):
+					#print(str(i)+" went into lat")
+					curr_wave.update({'w_lat':i.strip()})
+				elif lon.search(i):
+					#print(str(i)+" went into lon")
+					curr_wave.update({'w_lon':i.strip()})
+				elif w_time.match(i):
+					#print(str(i)+" went into w_time")
+					curr_wave.update({'w_time':i.strip()})
+				elif meter.match(i):
+					#print(str(i)+" went into amp meter")
+					curr_wave.update({'amplitudeM':i.strip()})
+				elif ft.match(i):
+					#print(str(i)+" went into amp ft")
+					curr_wave.update({'amplitudeFt':i.strip()})
+				elif minute.match(i):
+					#print(str(i)+" went into min")
+					curr_wave.update({'period':i.strip()})
+				elif word.match(i) or digits.match(i):
+					location_word_list.append(i)
+
+			location_string = ""
+			for l  in location_word_list:
+				location_string += l + " "
+
+			curr_wave.update({'w_location':location_string.strip()})		
+
+			master_wave_data.append(curr_wave)
+
+	return master_wave_data
+
+
+
+
+
+
 
