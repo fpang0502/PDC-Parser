@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<vaac>
+			<incident>
+				<vaac_id>FVXX23</vaac_id>
+				<vaac_code>KNES</vaac_code>
+				<issued_id>230800</issued_id>
+				<issued_time>20180223/0800</issued_time>
+				<vaac>WASHINGTON</vaac>
+				<volcano_name>FUEGO</volcano_name>
+				<volcano_id>342090</volcano_id>
+				<position>N1428 W09052</position>
+				<area>GUATEMALA</area>
+				<summit_elev>3763 M</summit_elev>
+				<adv_num>2018/167</adv_num>
+				<info_source>GOES-EAST . NUMERICAL WEATHER PREDICTION MODELS . COOPERATIVE INSTITUTE FOR METEOROLOGICAL SATELLITE STUDIES VOLCAT . VOLCANO WEB CAMERA .</info_source>
+				<eruption_details>ONGOING VOLCANIC ASH EMS</eruption_details>
+				<obs_time>23/0730Z</obs_time>
+				<obs_cld_data>SFC/FL170 N1430 W09055 - N1426 W09055 - N1416 W09119 - N1426 W09122 - N1430 W09055 MOV W 10-15KT</obs_cld_data>
+				<fcst_cld_6hr_time>23/1330z</fcst_cld_6hr_time>
+				<fcst_cld_6hr_data>SFC/FL170 N1430 W09055 - N1426 W09054 - N1416 W09119 - N1426 W09123 - N1430 W09055</fcst_cld_6hr_data>
+				<fcst_cld_12hr_time>23/1930z</fcst_cld_12hr_time>
+				<fcst_cld_12hr_data>SFC/FL170 N1431 W09056 - N1426 W09054 - N1415 W09119 - N1426 W09122 - N1431 W09056</fcst_cld_12hr_data>
+				<fcst_cld_18hr_time>24/0130z</fcst_cld_18hr_time>
+				<fcst_cld_18hr_data>SFC/FL170 NO ASH EXP</fcst_cld_18hr_data>
+				<remarks>INTERMITTENT VOLCANIC ASH EMISSIONS SEEN ON STLT IMAGERY MOV WSW APPROX 25 NM AWAY FM THE SUMMIT . MODELS SUGGEST GENERAL WESTWARD MOV THRU T +12 HRS . ... KIM</remarks>
+				<nxt_adv>WILL BE ISSUED BY 20180223/1400Z</nxt_adv>
+			</incident>
+		</vaac>
+	</hazards>

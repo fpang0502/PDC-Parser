@@ -1,0 +1,768 @@
+
+A HURRICANE WARNING MEANS THAT HURRICANE CONDITIONS ARE EXPECTED
+SOMEWHERE WITHIN THE WARNING AREA.  A WARNING IS TYPICALLY ISSUED
+36 HOURS BEFORE THE ANTICIPATED FIRST OCCURRENCE OF TROPICAL-STORM-
+FORCE WINDS... CONDITIONS THAT MAKE OUTSIDE PREPARATIONS DIFFICULT
+OR
+DANGEROUS.  PREPARATIONS TO PROTECT LIFE AND PROPERTY SHOULD BE
+RUSHED TO COMPLETION.
+
+A TROPICAL STORM WARNING MEANS THAT TROPICAL STORM CONDITIONS ARE
+EXPECTED SOMEWHERE WITHIN THE WARNING AREA WITHIN 36 HOURS.
+
+A HURRICANE WATCH MEANS THAT HURRICANE CONDITIONS ARE POSSIBLE
+WITHIN THE WATCH AREA.  A WATCH IS TYPICALLY ISSUED 48 HOURS
+BEFORE THE ANTICIPATED FIRST OCCURRENCE OF TROPICAL-STORM-FORCE
+WINDS... CONDITIONS THAT MAKE OUTSIDE PREPARATIONS DIFFICULT OR
+DANGEROUS.
+
+A TROPICAL STORM WATCH MEANS THAT TROPICAL STORM CONDITIONS ARE
+POSSIBLE WITHIN THE WATCH AREA... GENERALLY WITHIN 48 HOURS.
+
+INTERESTS ELSEWHERE IN THE LESSER ANTILLES AND THE BRITISH AND U. S.
+VIRGIN ISLANDS SHOULD MONITOR THE PROGRESS OF THIS SYSTEM.
+ADDITIONAL TROPICAL STORM OR HURRICANE WATCHES AND WARNINGS WILL
+LIKELY BE ISSUED TODAY.
+
+PARSE LIST 0: [
+	{'index': 1, 'word': 'tropical', 'head': 3, 'deprel': 'amod'},
+	{'index': 2, 'word': 'storm', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'maria', 'head': 4, 'deprel': 'dep'},
+	{'index': 4, 'word': 'forecast', 'head': 0, 'deprel': 'root'},
+	{'index': 5, 'word': '/', 'head': 7, 'deprel': 'nummod'},
+	{'index': 6, 'word': 'advisory', 'head': 7, 'deprel': 'amod'},
+	{'index': 7, 'word': 'number', 'head': 4, 'deprel': 'nsubj'},
+	{'index': 8, 'word': '5', 'head': 7, 'deprel': 'nummod'},
+]
+
+PARSE LIST 1: [
+	{'index': 1, 'word': 'NWS', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'national', 'head': 5, 'deprel': 'amod'},
+	{'index': 3, 'word': 'hurricane', 'head': 5, 'deprel': 'compound'},
+	{'index': 4, 'word': 'center', 'head': 5, 'deprel': 'compound'},
+	{'index': 5, 'word': 'miami', 'head': 1, 'deprel': 'dep'},
+	{'index': 6, 'word': 'fl', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'al152017', 'head': 1, 'deprel': 'dep'},
+]
+
+PARSE LIST 2: [
+	{'index': 1, 'word': 'changes', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'in', 'head': 3, 'deprel': 'case'},
+	{'index': 3, 'word': 'watches', 'head': 1, 'deprel': 'nmod'},
+	{'index': 4, 'word': 'and', 'head': 3, 'deprel': 'cc'},
+	{'index': 5, 'word': 'warnings', 'head': 3, 'deprel': 'conj'},
+	{'index': 6, 'word': 'with', 'head': 8, 'deprel': 'case'},
+	{'index': 7, 'word': 'this', 'head': 8, 'deprel': 'det'},
+	{'index': 8, 'word': 'advisory', 'head': 3, 'deprel': 'nmod'},
+	{'index': 9, 'word': '...', 'head': 1, 'deprel': 'punct'},
+]
+
+PARSE LIST 3: [
+	{'index': 1, 'word': 'the', 'head': 2, 'deprel': 'det'},
+	{'index': 2, 'word': 'government', 'head': 6, 'deprel': 'nsubj'},
+	{'index': 3, 'word': 'of', 'head': 4, 'deprel': 'case'},
+	{'index': 4, 'word': 'barbados', 'head': 2, 'deprel': 'nmod'},
+	{'index': 5, 'word': 'has', 'head': 6, 'deprel': 'aux'},
+	{'index': 6, 'word': 'issued', 'head': 0, 'deprel': 'root'},
+	{'index': 7, 'word': 'a', 'head': 9, 'deprel': 'det'},
+	{'index': 8, 'word': 'hurricane', 'head': 9, 'deprel': 'compound'},
+	{'index': 9, 'word': 'warning', 'head': 6, 'deprel': 'dobj'},
+	{'index': 10, 'word': 'for', 'head': 6, 'deprel': 'nmod'},
+]
+
+PARSE LIST 4: [
+	{'index': 1, 'word': 'dominica', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 5: [
+	{'index': 1, 'word': 'the', 'head': 2, 'deprel': 'det'},
+	{'index': 2, 'word': 'government', 'head': 7, 'deprel': 'nsubj'},
+	{'index': 3, 'word': 'of', 'head': 5, 'deprel': 'case'},
+	{'index': 4, 'word': 'st.', 'head': 5, 'deprel': 'compound'},
+	{'index': 5, 'word': 'lucia', 'head': 2, 'deprel': 'nmod'},
+	{'index': 6, 'word': 'has', 'head': 7, 'deprel': 'aux'},
+	{'index': 7, 'word': 'issued', 'head': 0, 'deprel': 'root'},
+	{'index': 8, 'word': 'a', 'head': 11, 'deprel': 'det'},
+	{'index': 9, 'word': 'tropical', 'head': 11, 'deprel': 'amod'},
+	{'index': 10, 'word': 'storm', 'head': 11, 'deprel': 'compound'},
+	{'index': 11, 'word': 'warning', 'head': 7, 'deprel': 'dobj'},
+	{'index': 12, 'word': 'for', 'head': 7, 'deprel': 'nmod'},
+]
+
+PARSE LIST 6: [
+	{'index': 1, 'word': 'st.', 'head': 2, 'deprel': 'compound'},
+	{'index': 2, 'word': 'lucia', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 7: [
+	{'index': 1, 'word': 'summary', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'of', 'head': 3, 'deprel': 'case'},
+	{'index': 3, 'word': 'watches', 'head': 1, 'deprel': 'nmod'},
+	{'index': 4, 'word': 'and', 'head': 3, 'deprel': 'cc'},
+	{'index': 5, 'word': 'warnings', 'head': 3, 'deprel': 'conj'},
+	{'index': 6, 'word': 'in', 'head': 7, 'deprel': 'case'},
+	{'index': 7, 'word': 'effect', 'head': 3, 'deprel': 'nmod'},
+	{'index': 8, 'word': '...', 'head': 1, 'deprel': 'punct'},
+]
+
+PARSE LIST 8: [
+	{'index': 1, 'word': 'a', 'head': 3, 'deprel': 'det'},
+	{'index': 2, 'word': 'hurricane', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'warning', 'head': 6, 'deprel': 'nsubj'},
+	{'index': 4, 'word': 'is', 'head': 6, 'deprel': 'cop'},
+	{'index': 5, 'word': 'in', 'head': 6, 'deprel': 'case'},
+	{'index': 6, 'word': 'effect', 'head': 0, 'deprel': 'root'},
+	{'index': 7, 'word': 'for', 'head': 6, 'deprel': 'nmod'},
+	{'index': 8, 'word': '...', 'head': 6, 'deprel': 'punct'},
+]
+
+PARSE LIST 9: [
+	{'index': 1, 'word': '*', 'head': 2, 'deprel': 'dep'},
+	{'index': 2, 'word': 'dominica', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 10: [
+	{'index': 1, 'word': 'a', 'head': 4, 'deprel': 'det'},
+	{'index': 2, 'word': 'tropical', 'head': 4, 'deprel': 'amod'},
+	{'index': 3, 'word': 'storm', 'head': 4, 'deprel': 'compound'},
+	{'index': 4, 'word': 'warning', 'head': 7, 'deprel': 'nsubj'},
+	{'index': 5, 'word': 'is', 'head': 7, 'deprel': 'cop'},
+	{'index': 6, 'word': 'in', 'head': 7, 'deprel': 'case'},
+	{'index': 7, 'word': 'effect', 'head': 0, 'deprel': 'root'},
+	{'index': 8, 'word': 'for', 'head': 7, 'deprel': 'nmod'},
+	{'index': 9, 'word': '...', 'head': 7, 'deprel': 'punct'},
+]
+
+PARSE LIST 11: [
+	{'index': 1, 'word': '*', 'head': 3, 'deprel': 'dep'},
+	{'index': 2, 'word': 'st.', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'lucia', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 12: [
+	{'index': 1, 'word': 'a', 'head': 3, 'deprel': 'det'},
+	{'index': 2, 'word': 'hurricane', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'watch', 'head': 6, 'deprel': 'nsubj'},
+	{'index': 4, 'word': 'is', 'head': 6, 'deprel': 'cop'},
+	{'index': 5, 'word': 'in', 'head': 6, 'deprel': 'case'},
+	{'index': 6, 'word': 'effect', 'head': 0, 'deprel': 'root'},
+	{'index': 7, 'word': 'for', 'head': 6, 'deprel': 'nmod'},
+	{'index': 8, 'word': '...', 'head': 6, 'deprel': 'punct'},
+]
+
+PARSE LIST 13: [
+	{'index': 1, 'word': '*', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'antigua', 'head': 1, 'deprel': 'dep'},
+	{'index': 3, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 4, 'word': 'barbuda', 'head': 1, 'deprel': 'dep'},
+	{'index': 5, 'word': '...', 'head': 4, 'deprel': 'punct'},
+	{'index': 6, 'word': 'st.', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'kitts', 'head': 4, 'deprel': 'conj'},
+	{'index': 8, 'word': '...', 'head': 7, 'deprel': 'punct'},
+	{'index': 9, 'word': 'nevis', 'head': 7, 'deprel': 'dep'},
+	{'index': 10, 'word': '...', 'head': 4, 'deprel': 'punct'},
+	{'index': 11, 'word': 'and', 'head': 4, 'deprel': 'cc'},
+	{'index': 12, 'word': 'montserrat', 'head': 4, 'deprel': 'conj'},
+]
+
+PARSE LIST 14: [
+	{'index': 1, 'word': '*', 'head': 2, 'deprel': 'dep'},
+	{'index': 2, 'word': 'guadeloupe', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 15: [
+	{'index': 1, 'word': '*', 'head': 2, 'deprel': 'dep'},
+	{'index': 2, 'word': 'saba', 'head': 0, 'deprel': 'root'},
+	{'index': 3, 'word': 'and', 'head': 2, 'deprel': 'cc'},
+	{'index': 4, 'word': 'st.', 'head': 5, 'deprel': 'compound'},
+	{'index': 5, 'word': 'eustatius', 'head': 2, 'deprel': 'conj'},
+]
+
+PARSE LIST 16: [
+	{'index': 1, 'word': '*', 'head': 3, 'deprel': 'dep'},
+	{'index': 2, 'word': 'st.', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'maarten', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 17: [
+	{'index': 1, 'word': '*', 'head': 2, 'deprel': 'dep'},
+	{'index': 2, 'word': 'st.', 'head': 0, 'deprel': 'root'},
+	{'index': 3, 'word': 'martin', 'head': 2, 'deprel': 'dobj'},
+	{'index': 4, 'word': 'and', 'head': 3, 'deprel': 'cc'},
+	{'index': 5, 'word': 'st.', 'head': 3, 'deprel': 'conj'},
+	{'index': 6, 'word': 'barthelemy', 'head': 2, 'deprel': 'advmod'},
+]
+
+PARSE LIST 18: [
+	{'index': 1, 'word': '*', 'head': 2, 'deprel': 'dep'},
+	{'index': 2, 'word': 'anguilla', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 19: [
+	{'index': 1, 'word': 'a', 'head': 4, 'deprel': 'det'},
+	{'index': 2, 'word': 'tropical', 'head': 4, 'deprel': 'amod'},
+	{'index': 3, 'word': 'storm', 'head': 4, 'deprel': 'compound'},
+	{'index': 4, 'word': 'watch', 'head': 7, 'deprel': 'nsubj'},
+	{'index': 5, 'word': 'is', 'head': 7, 'deprel': 'cop'},
+	{'index': 6, 'word': 'in', 'head': 7, 'deprel': 'case'},
+	{'index': 7, 'word': 'effect', 'head': 0, 'deprel': 'root'},
+	{'index': 8, 'word': 'for', 'head': 7, 'deprel': 'nmod'},
+	{'index': 9, 'word': '...', 'head': 7, 'deprel': 'punct'},
+]
+
+PARSE LIST 20: [
+	{'index': 1, 'word': '*', 'head': 2, 'deprel': 'dep'},
+	{'index': 2, 'word': 'martinique', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 21: [
+	{'index': 1, 'word': '*', 'head': 2, 'deprel': 'dep'},
+	{'index': 2, 'word': 'barbados', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 22: [
+	{'index': 1, 'word': '*', 'head': 3, 'deprel': 'dep'},
+	{'index': 2, 'word': 'st.', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'vincent', 'head': 0, 'deprel': 'root'},
+	{'index': 4, 'word': 'and', 'head': 3, 'deprel': 'cc'},
+	{'index': 5, 'word': 'the', 'head': 6, 'deprel': 'det'},
+	{'index': 6, 'word': 'grenadines', 'head': 3, 'deprel': 'conj'},
+]
+
+PARSE LIST 23: [
+	{'index': 1, 'word': 'a', 'head': 3, 'deprel': 'det'},
+	{'index': 2, 'word': 'hurricane', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'warning', 'head': 4, 'deprel': 'nsubj'},
+	{'index': 4, 'word': 'means', 'head': 0, 'deprel': 'root'},
+	{'index': 5, 'word': 'that', 'head': 9, 'deprel': 'mark'},
+	{'index': 6, 'word': 'hurricane', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'conditions', 'head': 9, 'deprel': 'nsubjpass'},
+	{'index': 8, 'word': 'are', 'head': 9, 'deprel': 'auxpass'},
+	{'index': 9, 'word': 'expected', 'head': 4, 'deprel': 'ccomp'},
+]
+
+PARSE LIST 24: [
+	{'index': 1, 'word': 'somewhere', 'head': 5, 'deprel': 'advmod'},
+	{'index': 2, 'word': 'within', 'head': 5, 'deprel': 'case'},
+	{'index': 3, 'word': 'the', 'head': 5, 'deprel': 'det'},
+	{'index': 4, 'word': 'warning', 'head': 5, 'deprel': 'compound'},
+	{'index': 5, 'word': 'area', 'head': 10, 'deprel': 'nmod'},
+	{'index': 6, 'word': 'a', 'head': 7, 'deprel': 'det'},
+	{'index': 7, 'word': 'warning', 'head': 10, 'deprel': 'nsubjpass'},
+	{'index': 8, 'word': 'is', 'head': 10, 'deprel': 'auxpass'},
+	{'index': 9, 'word': 'typically', 'head': 10, 'deprel': 'advmod'},
+	{'index': 10, 'word': 'issued', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 25: [
+	{'index': 1, 'word': 'force', 'head': 2, 'deprel': 'compound'},
+	{'index': 2, 'word': 'winds', 'head': 0, 'deprel': 'root'},
+	{'index': 3, 'word': '...', 'head': 2, 'deprel': 'punct'},
+	{'index': 4, 'word': 'conditions', 'head': 2, 'deprel': 'dep'},
+	{'index': 5, 'word': 'that', 'head': 6, 'deprel': 'nsubj'},
+	{'index': 6, 'word': 'make', 'head': 4, 'deprel': 'acl:relcl'},
+	{'index': 7, 'word': 'outside', 'head': 8, 'deprel': 'amod'},
+	{'index': 8, 'word': 'preparations', 'head': 9, 'deprel': 'nsubj'},
+	{'index': 9, 'word': 'difficult', 'head': 6, 'deprel': 'xcomp'},
+]
+
+PARSE LIST 26: [
+	{'index': 1, 'word': 'or', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 27: [
+	{'index': 1, 'word': 'dangerous', 'head': 2, 'deprel': 'amod'},
+	{'index': 2, 'word': 'preparations', 'head': 9, 'deprel': 'nsubj'},
+	{'index': 3, 'word': 'to', 'head': 4, 'deprel': 'mark'},
+	{'index': 4, 'word': 'protect', 'head': 2, 'deprel': 'acl'},
+	{'index': 5, 'word': 'life', 'head': 4, 'deprel': 'dobj'},
+	{'index': 6, 'word': 'and', 'head': 5, 'deprel': 'cc'},
+	{'index': 7, 'word': 'property', 'head': 5, 'deprel': 'conj'},
+	{'index': 8, 'word': 'should', 'head': 9, 'deprel': 'aux'},
+	{'index': 9, 'word': 'be', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 28: [
+	{'index': 1, 'word': 'rushed', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'to', 'head': 3, 'deprel': 'case'},
+	{'index': 3, 'word': 'completion', 'head': 1, 'deprel': 'nmod'},
+]
+
+PARSE LIST 29: [
+	{'index': 1, 'word': 'a', 'head': 4, 'deprel': 'det'},
+	{'index': 2, 'word': 'tropical', 'head': 4, 'deprel': 'amod'},
+	{'index': 3, 'word': 'storm', 'head': 4, 'deprel': 'compound'},
+	{'index': 4, 'word': 'warning', 'head': 5, 'deprel': 'nsubj'},
+	{'index': 5, 'word': 'means', 'head': 0, 'deprel': 'root'},
+	{'index': 6, 'word': 'that', 'head': 10, 'deprel': 'mark'},
+	{'index': 7, 'word': 'tropical', 'head': 9, 'deprel': 'amod'},
+	{'index': 8, 'word': 'storm', 'head': 9, 'deprel': 'compound'},
+	{'index': 9, 'word': 'conditions', 'head': 10, 'deprel': 'nsubj'},
+	{'index': 10, 'word': 'are', 'head': 5, 'deprel': 'ccomp'},
+]
+
+PARSE LIST 30: [
+	{'index': 1, 'word': 'expected', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'somewhere', 'head': 6, 'deprel': 'advmod'},
+	{'index': 3, 'word': 'within', 'head': 6, 'deprel': 'case'},
+	{'index': 4, 'word': 'the', 'head': 6, 'deprel': 'det'},
+	{'index': 5, 'word': 'warning', 'head': 6, 'deprel': 'amod'},
+	{'index': 6, 'word': 'area', 'head': 1, 'deprel': 'nmod'},
+	{'index': 7, 'word': 'within', 'head': 9, 'deprel': 'case'},
+	{'index': 8, 'word': '36', 'head': 9, 'deprel': 'nummod'},
+	{'index': 9, 'word': 'hours', 'head': 6, 'deprel': 'nmod'},
+]
+
+PARSE LIST 31: [
+	{'index': 1, 'word': 'a', 'head': 3, 'deprel': 'det'},
+	{'index': 2, 'word': 'hurricane', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'watch', 'head': 4, 'deprel': 'nsubj'},
+	{'index': 4, 'word': 'means', 'head': 0, 'deprel': 'root'},
+	{'index': 5, 'word': 'that', 'head': 9, 'deprel': 'mark'},
+	{'index': 6, 'word': 'hurricane', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'conditions', 'head': 9, 'deprel': 'nsubj'},
+	{'index': 8, 'word': 'are', 'head': 9, 'deprel': 'cop'},
+	{'index': 9, 'word': 'possible', 'head': 4, 'deprel': 'ccomp'},
+]
+
+PARSE LIST 32: [
+	{'index': 1, 'word': 'within', 'head': 4, 'deprel': 'case'},
+	{'index': 2, 'word': 'the', 'head': 4, 'deprel': 'det'},
+	{'index': 3, 'word': 'watch', 'head': 4, 'deprel': 'compound'},
+	{'index': 4, 'word': 'area', 'head': 9, 'deprel': 'nmod'},
+	{'index': 5, 'word': 'a', 'head': 6, 'deprel': 'det'},
+	{'index': 6, 'word': 'watch', 'head': 9, 'deprel': 'nsubjpass'},
+	{'index': 7, 'word': 'is', 'head': 9, 'deprel': 'auxpass'},
+	{'index': 8, 'word': 'typically', 'head': 9, 'deprel': 'advmod'},
+	{'index': 9, 'word': 'issued', 'head': 0, 'deprel': 'root'},
+	{'index': 10, 'word': '48', 'head': 11, 'deprel': 'nummod'},
+	{'index': 11, 'word': 'hours', 'head': 9, 'deprel': 'dobj'},
+]
+
+PARSE LIST 33: [
+	{'index': 1, 'word': 'before', 'head': 5, 'deprel': 'case'},
+	{'index': 2, 'word': 'the', 'head': 5, 'deprel': 'det'},
+	{'index': 3, 'word': 'anticipated', 'head': 5, 'deprel': 'amod'},
+	{'index': 4, 'word': 'first', 'head': 5, 'deprel': 'amod'},
+	{'index': 5, 'word': 'occurrence', 'head': 0, 'deprel': 'root'},
+	{'index': 6, 'word': 'of', 'head': 7, 'deprel': 'case'},
+	{'index': 7, 'word': 'tropical-storm-force', 'head': 5, 'deprel': 'nmod'},
+]
+
+PARSE LIST 34: [
+	{'index': 1, 'word': 'winds', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 3, 'word': 'conditions', 'head': 1, 'deprel': 'dep'},
+	{'index': 4, 'word': 'that', 'head': 5, 'deprel': 'nsubj'},
+	{'index': 5, 'word': 'make', 'head': 3, 'deprel': 'acl:relcl'},
+	{'index': 6, 'word': 'outside', 'head': 7, 'deprel': 'amod'},
+	{'index': 7, 'word': 'preparations', 'head': 5, 'deprel': 'dobj'},
+	{'index': 8, 'word': 'difficult', 'head': 7, 'deprel': 'amod'},
+	{'index': 9, 'word': 'or', 'head': 7, 'deprel': 'cc'},
+]
+
+PARSE LIST 35: [
+	{'index': 1, 'word': 'dangerous', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 36: [
+	{'index': 1, 'word': 'a', 'head': 4, 'deprel': 'det'},
+	{'index': 2, 'word': 'tropical', 'head': 4, 'deprel': 'amod'},
+	{'index': 3, 'word': 'storm', 'head': 4, 'deprel': 'compound'},
+	{'index': 4, 'word': 'watch', 'head': 5, 'deprel': 'nsubj'},
+	{'index': 5, 'word': 'means', 'head': 0, 'deprel': 'root'},
+	{'index': 6, 'word': 'that', 'head': 10, 'deprel': 'mark'},
+	{'index': 7, 'word': 'tropical', 'head': 9, 'deprel': 'amod'},
+	{'index': 8, 'word': 'storm', 'head': 9, 'deprel': 'compound'},
+	{'index': 9, 'word': 'conditions', 'head': 10, 'deprel': 'nsubj'},
+	{'index': 10, 'word': 'are', 'head': 5, 'deprel': 'ccomp'},
+]
+
+PARSE LIST 37: [
+	{'index': 1, 'word': 'possible', 'head': 5, 'deprel': 'advmod'},
+	{'index': 2, 'word': 'within', 'head': 5, 'deprel': 'case'},
+	{'index': 3, 'word': 'the', 'head': 5, 'deprel': 'det'},
+	{'index': 4, 'word': 'watch', 'head': 5, 'deprel': 'compound'},
+	{'index': 5, 'word': 'area', 'head': 7, 'deprel': 'nmod'},
+	{'index': 6, 'word': '...', 'head': 7, 'deprel': 'punct'},
+	{'index': 7, 'word': 'generally', 'head': 0, 'deprel': 'root'},
+	{'index': 8, 'word': 'within', 'head': 10, 'deprel': 'case'},
+	{'index': 9, 'word': '48', 'head': 10, 'deprel': 'nummod'},
+	{'index': 10, 'word': 'hours', 'head': 7, 'deprel': 'nmod'},
+]
+
+PARSE LIST 38: [
+	{'index': 1, 'word': 'interests', 'head': 2, 'deprel': 'nmod:npmod'},
+	{'index': 2, 'word': 'elsewhere', 'head': 10, 'deprel': 'advmod'},
+	{'index': 3, 'word': 'in', 'head': 6, 'deprel': 'case'},
+	{'index': 4, 'word': 'the', 'head': 6, 'deprel': 'det'},
+	{'index': 5, 'word': 'lesser', 'head': 6, 'deprel': 'amod'},
+	{'index': 6, 'word': 'antilles', 'head': 2, 'deprel': 'nmod'},
+	{'index': 7, 'word': 'and', 'head': 6, 'deprel': 'cc'},
+	{'index': 8, 'word': 'the', 'head': 9, 'deprel': 'det'},
+	{'index': 9, 'word': 'british', 'head': 6, 'deprel': 'conj'},
+	{'index': 10, 'word': 'and', 'head': 0, 'deprel': 'root'},
+	{'index': 11, 'word': 'up', 'head': 12, 'deprel': 'advmod'},
+	{'index': 12, 'word': 's', 'head': 10, 'deprel': 'advmod'},
+]
+
+PARSE LIST 39: [
+	{'index': 1, 'word': 'virgin', 'head': 2, 'deprel': 'amod'},
+	{'index': 2, 'word': 'islands', 'head': 4, 'deprel': 'nsubj'},
+	{'index': 3, 'word': 'should', 'head': 4, 'deprel': 'aux'},
+	{'index': 4, 'word': 'monitor', 'head': 0, 'deprel': 'root'},
+	{'index': 5, 'word': 'the', 'head': 6, 'deprel': 'det'},
+	{'index': 6, 'word': 'progress', 'head': 4, 'deprel': 'dobj'},
+	{'index': 7, 'word': 'of', 'head': 9, 'deprel': 'case'},
+	{'index': 8, 'word': 'this', 'head': 9, 'deprel': 'det'},
+	{'index': 9, 'word': 'system', 'head': 6, 'deprel': 'nmod'},
+]
+
+PARSE LIST 40: [
+	{'index': 1, 'word': 'additional', 'head': 3, 'deprel': 'amod'},
+	{'index': 2, 'word': 'tropical', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': 'storm', 'head': 9, 'deprel': 'nsubj'},
+	{'index': 4, 'word': 'or', 'head': 3, 'deprel': 'cc'},
+	{'index': 5, 'word': 'hurricane', 'head': 6, 'deprel': 'compound'},
+	{'index': 6, 'word': 'watches', 'head': 3, 'deprel': 'conj'},
+	{'index': 7, 'word': 'and', 'head': 3, 'deprel': 'cc'},
+	{'index': 8, 'word': 'warnings', 'head': 3, 'deprel': 'conj'},
+	{'index': 9, 'word': 'will', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 41: [
+	{'index': 1, 'word': 'likely', 'head': 3, 'deprel': 'advmod'},
+	{'index': 2, 'word': 'be', 'head': 3, 'deprel': 'auxpass'},
+	{'index': 3, 'word': 'issued', 'head': 0, 'deprel': 'root'},
+	{'index': 4, 'word': 'today', 'head': 3, 'deprel': 'nmod:tmod'},
+]
+
+PARSE LIST 42: [
+	{'index': 1, 'word': 'tropical', 'head': 3, 'deprel': 'amod'},
+	{'index': 2, 'word': 'storm', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'center', 'head': 7, 'deprel': 'nsubj'},
+	{'index': 4, 'word': 'located', 'head': 3, 'deprel': 'acl'},
+	{'index': 5, 'word': 'near', 'head': 6, 'deprel': 'case'},
+	{'index': 6, 'word': '13.5', 'head': 4, 'deprel': 'nmod'},
+	{'index': 7, 'word': 'n', 'head': 0, 'deprel': 'root'},
+	{'index': 8, 'word': '56.2', 'head': 9, 'deprel': 'nummod'},
+	{'index': 9, 'word': 'w', 'head': 7, 'deprel': 'dobj'},
+	{'index': 10, 'word': 'at', 'head': 11, 'deprel': 'case'},
+	{'index': 11, 'word': '17/1500z', 'head': 9, 'deprel': 'nmod'},
+]
+
+PARSE LIST 43: [
+	{'index': 1, 'word': 'position', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'accurate', 'head': 1, 'deprel': 'xcomp'},
+	{'index': 3, 'word': 'within', 'head': 5, 'deprel': 'case'},
+	{'index': 4, 'word': '30', 'head': 5, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'nm', 'head': 2, 'deprel': 'nmod'},
+]
+
+PARSE LIST 44: [
+	{'index': 1, 'word': 'present', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'movement', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': 'toward', 'head': 5, 'deprel': 'case'},
+	{'index': 4, 'word': 'the', 'head': 5, 'deprel': 'det'},
+	{'index': 5, 'word': 'west-northwest', 'head': 1, 'deprel': 'nmod'},
+	{'index': 6, 'word': 'or', 'head': 5, 'deprel': 'cc'},
+	{'index': 7, 'word': '290', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'degrees', 'head': 5, 'deprel': 'conj'},
+	{'index': 9, 'word': 'at', 'head': 11, 'deprel': 'case'},
+	{'index': 10, 'word': '13', 'head': 11, 'deprel': 'nummod'},
+	{'index': 11, 'word': 'kt', 'head': 8, 'deprel': 'nmod'},
+]
+
+PARSE LIST 45: [
+	{'index': 1, 'word': 'estimated', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'minimum', 'head': 4, 'deprel': 'amod'},
+	{'index': 3, 'word': 'central', 'head': 4, 'deprel': 'amod'},
+	{'index': 4, 'word': 'pressure', 'head': 1, 'deprel': 'dobj'},
+	{'index': 5, 'word': '994', 'head': 6, 'deprel': 'nummod'},
+	{'index': 6, 'word': 'mb', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 46: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'sustained', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': 'winds', 'head': 1, 'deprel': 'dobj'},
+	{'index': 4, 'word': '55', 'head': 5, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 6, 'word': 'with', 'head': 7, 'deprel': 'case'},
+	{'index': 7, 'word': 'gusts', 'head': 1, 'deprel': 'nmod'},
+	{'index': 8, 'word': 'to', 'head': 10, 'deprel': 'case'},
+	{'index': 9, 'word': '65', 'head': 10, 'deprel': 'nummod'},
+	{'index': 10, 'word': 'kt', 'head': 7, 'deprel': 'nmod'},
+]
+
+PARSE LIST 47: [
+	{'index': 1, 'word': 'winds', 'head': 4, 'deprel': 'nsubj'},
+	{'index': 2, 'word': 'and', 'head': 1, 'deprel': 'cc'},
+	{'index': 3, 'word': 'seas', 'head': 1, 'deprel': 'conj'},
+	{'index': 4, 'word': 'vary', 'head': 0, 'deprel': 'root'},
+	{'index': 5, 'word': 'greatly', 'head': 4, 'deprel': 'advmod'},
+	{'index': 6, 'word': 'in', 'head': 9, 'deprel': 'case'},
+	{'index': 7, 'word': 'each', 'head': 9, 'deprel': 'det'},
+	{'index': 8, 'word': 'quadrant', 'head': 9, 'deprel': 'amod'},
+	{'index': 9, 'word': 'radii', 'head': 4, 'deprel': 'nmod'},
+	{'index': 10, 'word': 'in', 'head': 11, 'deprel': 'case'},
+	{'index': 11, 'word': 'nautical', 'head': 9, 'deprel': 'nmod'},
+]
+
+PARSE LIST 48: [
+	{'index': 1, 'word': 'miles', 'head': 5, 'deprel': 'nsubj'},
+	{'index': 2, 'word': 'are', 'head': 5, 'deprel': 'cop'},
+	{'index': 3, 'word': 'the', 'head': 5, 'deprel': 'det'},
+	{'index': 4, 'word': 'largest', 'head': 5, 'deprel': 'amod'},
+	{'index': 5, 'word': 'radii', 'head': 0, 'deprel': 'root'},
+	{'index': 6, 'word': 'expected', 'head': 5, 'deprel': 'acl'},
+	{'index': 7, 'word': 'anywhere', 'head': 6, 'deprel': 'advmod'},
+	{'index': 8, 'word': 'in', 'head': 10, 'deprel': 'case'},
+	{'index': 9, 'word': 'that', 'head': 10, 'deprel': 'det'},
+	{'index': 10, 'word': 'quadrant', 'head': 6, 'deprel': 'nmod'},
+]
+
+PARSE LIST 49: [
+	{'index': 1, 'word': 'repeat', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 3, 'word': 'center', 'head': 1, 'deprel': 'dep'},
+	{'index': 4, 'word': 'located', 'head': 3, 'deprel': 'acl'},
+	{'index': 5, 'word': 'near', 'head': 9, 'deprel': 'case'},
+	{'index': 6, 'word': '13.5', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'n', 'head': 9, 'deprel': 'nummod'},
+	{'index': 8, 'word': '56.2', 'head': 9, 'deprel': 'compound'},
+	{'index': 9, 'word': 'w', 'head': 4, 'deprel': 'nmod'},
+	{'index': 10, 'word': 'at', 'head': 11, 'deprel': 'case'},
+	{'index': 11, 'word': '17/1500z', 'head': 4, 'deprel': 'nmod'},
+]
+
+PARSE LIST 50: [
+	{'index': 1, 'word': 'at', 'head': 3, 'deprel': 'case'},
+	{'index': 2, 'word': '17/1200z', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': 'center', 'head': 5, 'deprel': 'nmod'},
+	{'index': 4, 'word': 'was', 'head': 5, 'deprel': 'auxpass'},
+	{'index': 5, 'word': 'located', 'head': 0, 'deprel': 'root'},
+	{'index': 6, 'word': 'near', 'head': 8, 'deprel': 'case'},
+	{'index': 7, 'word': '13.3', 'head': 8, 'deprel': 'compound'},
+	{'index': 8, 'word': 'n', 'head': 5, 'deprel': 'nmod'},
+	{'index': 9, 'word': '55.7', 'head': 10, 'deprel': 'compound'},
+	{'index': 10, 'word': 'w', 'head': 5, 'deprel': 'nsubjpass'},
+]
+
+PARSE LIST 51: [
+	{'index': 1, 'word': 'forecast', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'valid', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': '18/0000z', 'head': 1, 'deprel': 'dobj'},
+	{'index': 4, 'word': '14.1', 'head': 7, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'n', 'head': 7, 'deprel': 'compound'},
+	{'index': 6, 'word': '57.7', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'w', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 52: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'wind', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': '65', 'head': 4, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 5, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 6, 'word': 'gusts', 'head': 1, 'deprel': 'dep'},
+	{'index': 7, 'word': '80', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'kt', 'head': 6, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 53: [
+	{'index': 1, 'word': 'forecast', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'valid', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': '18/1200z', 'head': 1, 'deprel': 'dobj'},
+	{'index': 4, 'word': '14.8', 'head': 7, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'n', 'head': 7, 'deprel': 'compound'},
+	{'index': 6, 'word': '59.3', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'w', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 54: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'wind', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': '75', 'head': 4, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 5, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 6, 'word': 'gusts', 'head': 1, 'deprel': 'dep'},
+	{'index': 7, 'word': '90', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'kt', 'head': 6, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 55: [
+	{'index': 1, 'word': 'forecast', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'valid', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': '19/0000z', 'head': 1, 'deprel': 'dobj'},
+	{'index': 4, 'word': '15.5', 'head': 7, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'n', 'head': 7, 'deprel': 'compound'},
+	{'index': 6, 'word': '60.7', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'w', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 56: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'wind', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': '85', 'head': 4, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 5, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 6, 'word': 'gusts', 'head': 1, 'deprel': 'dep'},
+	{'index': 7, 'word': '105', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'kt', 'head': 6, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 57: [
+	{'index': 1, 'word': 'forecast', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'valid', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': '19/1200z', 'head': 1, 'deprel': 'dobj'},
+	{'index': 4, 'word': '16.1', 'head': 7, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'n', 'head': 7, 'deprel': 'compound'},
+	{'index': 6, 'word': '62.0', 'head': 7, 'deprel': 'nummod'},
+	{'index': 7, 'word': 'w', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 58: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'wind', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': '95', 'head': 4, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 5, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 6, 'word': 'gusts', 'head': 1, 'deprel': 'dep'},
+	{'index': 7, 'word': '115', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'kt', 'head': 6, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 59: [
+	{'index': 1, 'word': 'forecast', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'valid', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': '20/1200z', 'head': 1, 'deprel': 'dobj'},
+	{'index': 4, 'word': '17.3', 'head': 7, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'n', 'head': 7, 'deprel': 'compound'},
+	{'index': 6, 'word': '64.7', 'head': 7, 'deprel': 'nummod'},
+	{'index': 7, 'word': 'w', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 60: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'wind', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': '110', 'head': 4, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 5, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 6, 'word': 'gusts', 'head': 1, 'deprel': 'dep'},
+	{'index': 7, 'word': '135', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'kt', 'head': 6, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 61: [
+	{'index': 1, 'word': 'extended', 'head': 3, 'deprel': 'amod'},
+	{'index': 2, 'word': 'outlook', 'head': 3, 'deprel': 'compound'},
+	{'index': 3, 'word': 'note', 'head': 0, 'deprel': 'root'},
+	{'index': 4, 'word': '...', 'head': 3, 'deprel': 'punct'},
+	{'index': 5, 'word': 'errors', 'head': 9, 'deprel': 'nsubj'},
+	{'index': 6, 'word': 'for', 'head': 7, 'deprel': 'case'},
+	{'index': 7, 'word': 'track', 'head': 5, 'deprel': 'nmod'},
+	{'index': 8, 'word': 'have', 'head': 9, 'deprel': 'aux'},
+	{'index': 9, 'word': 'averaged', 'head': 3, 'deprel': 'parataxis'},
+	{'index': 10, 'word': 'near', 'head': 12, 'deprel': 'case'},
+	{'index': 11, 'word': '150', 'head': 12, 'deprel': 'nummod'},
+	{'index': 12, 'word': 'nm', 'head': 9, 'deprel': 'nmod'},
+]
+
+PARSE LIST 62: [
+	{'index': 1, 'word': 'on', 'head': 2, 'deprel': 'case'},
+	{'index': 2, 'word': 'day', 'head': 3, 'deprel': 'nmod'},
+	{'index': 3, 'word': '4', 'head': 0, 'deprel': 'root'},
+	{'index': 4, 'word': 'and', 'head': 3, 'deprel': 'cc'},
+	{'index': 5, 'word': '200', 'head': 3, 'deprel': 'conj'},
+	{'index': 6, 'word': 'nm', 'head': 3, 'deprel': 'amod'},
+	{'index': 7, 'word': 'on', 'head': 8, 'deprel': 'case'},
+	{'index': 8, 'word': 'day', 'head': 6, 'deprel': 'nmod'},
+	{'index': 9, 'word': '5', 'head': 8, 'deprel': 'nummod'},
+	{'index': 10, 'word': '...', 'head': 8, 'deprel': 'punct'},
+	{'index': 11, 'word': 'and', 'head': 8, 'deprel': 'cc'},
+	{'index': 12, 'word': 'for', 'head': 13, 'deprel': 'case'},
+	{'index': 13, 'word': 'intensity', 'head': 8, 'deprel': 'conj'},
+	{'index': 14, 'word': 'near', 'head': 16, 'deprel': 'case'},
+	{'index': 15, 'word': '15', 'head': 16, 'deprel': 'nummod'},
+	{'index': 16, 'word': 'kt', 'head': 3, 'deprel': 'nmod'},
+	{'index': 17, 'word': 'each', 'head': 18, 'deprel': 'det'},
+	{'index': 18, 'word': 'day', 'head': 16, 'deprel': 'dep'},
+]
+
+PARSE LIST 63: [
+	{'index': 1, 'word': 'outlook', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'valid', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': '21/1200z', 'head': 1, 'deprel': 'dobj'},
+	{'index': 4, 'word': '18.5', 'head': 7, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'n', 'head': 7, 'deprel': 'compound'},
+	{'index': 6, 'word': '67.5', 'head': 7, 'deprel': 'nummod'},
+	{'index': 7, 'word': 'w', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 64: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'wind', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': '105', 'head': 4, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 5, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 6, 'word': 'gusts', 'head': 1, 'deprel': 'dep'},
+	{'index': 7, 'word': '130', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'kt', 'head': 6, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 65: [
+	{'index': 1, 'word': 'outlook', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'valid', 'head': 3, 'deprel': 'amod'},
+	{'index': 3, 'word': '22/1200z', 'head': 1, 'deprel': 'dep'},
+	{'index': 4, 'word': '20.0', 'head': 7, 'deprel': 'nummod'},
+	{'index': 5, 'word': 'n', 'head': 7, 'deprel': 'compound'},
+	{'index': 6, 'word': '69.5', 'head': 7, 'deprel': 'compound'},
+	{'index': 7, 'word': 'w', 'head': 1, 'deprel': 'dep'},
+]
+
+PARSE LIST 66: [
+	{'index': 1, 'word': 'max', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'wind', 'head': 1, 'deprel': 'dobj'},
+	{'index': 3, 'word': '100', 'head': 4, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'kt', 'head': 1, 'deprel': 'nsubj'},
+	{'index': 5, 'word': '...', 'head': 1, 'deprel': 'punct'},
+	{'index': 6, 'word': 'gusts', 'head': 1, 'deprel': 'dep'},
+	{'index': 7, 'word': '120', 'head': 8, 'deprel': 'nummod'},
+	{'index': 8, 'word': 'kt', 'head': 6, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 67: [
+	{'index': 1, 'word': 'request', 'head': 0, 'deprel': 'root'},
+	{'index': 2, 'word': 'for', 'head': 6, 'deprel': 'case'},
+	{'index': 3, 'word': '3', 'head': 6, 'deprel': 'nummod'},
+	{'index': 4, 'word': 'hourly', 'head': 6, 'deprel': 'amod'},
+	{'index': 5, 'word': 'ship', 'head': 6, 'deprel': 'compound'},
+	{'index': 6, 'word': 'reports', 'head': 1, 'deprel': 'nmod'},
+	{'index': 7, 'word': 'within', 'head': 9, 'deprel': 'case'},
+	{'index': 8, 'word': '300', 'head': 9, 'deprel': 'nummod'},
+	{'index': 9, 'word': 'miles', 'head': 6, 'deprel': 'nmod'},
+	{'index': 10, 'word': 'of', 'head': 12, 'deprel': 'case'},
+	{'index': 11, 'word': '13.5', 'head': 12, 'deprel': 'nummod'},
+	{'index': 12, 'word': 'n', 'head': 9, 'deprel': 'nmod'},
+	{'index': 13, 'word': '56.2', 'head': 14, 'deprel': 'nummod'},
+	{'index': 14, 'word': 'w', 'head': 1, 'deprel': 'nsubj'},
+]
+
+PARSE LIST 68: [
+	{'index': 1, 'word': 'next', 'head': 2, 'deprel': 'amod'},
+	{'index': 2, 'word': 'advisory', 'head': 0, 'deprel': 'root'},
+	{'index': 3, 'word': 'at', 'head': 4, 'deprel': 'case'},
+	{'index': 4, 'word': '17/2100z', 'head': 2, 'deprel': 'nmod'},
+]
+
+PARSE LIST 69: [
+	{'index': 1, 'word': 'of', 'head': 0, 'deprel': 'root'},
+]
+
+PARSE LIST 70: [
+	{'index': 1, 'word': 'forecaster', 'head': 2, 'deprel': 'compound'},
+	{'index': 2, 'word': 'berg', 'head': 0, 'deprel': 'root'},
+]
+
+length of list: 71

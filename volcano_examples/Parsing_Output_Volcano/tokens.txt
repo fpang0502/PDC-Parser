@@ -1,0 +1,278 @@
+parse_list0:
+[
+  {'index': 1, 'word': 'info', 'head': 2, 'deprel': 'compound'},
+  {'index': 2, 'word': 'source', 'head': 0, 'deprel': 'root'},
+  {'index': 3, 'word': ':', 'head': 2, 'deprel': 'punct'},
+  {'index': 4, 'word': 'goes-east', 'head': 2, 'deprel': 'dep'},
+  {'index': 5, 'word': '.', 'head': 4, 'deprel': 'punct'},
+  {'index': 6, 'word': 'nwp', 'head': 7, 'deprel': 'compound'},
+  {'index': 7, 'word': 'models', 'head': 4, 'deprel': 'dep'},
+  {'index': 8, 'word': '.', 'head': 4, 'deprel': 'punct'},
+  {'index': 9, 'word': 'cimss', 'head': 10, 'deprel': 'amod'},
+  {'index': 10, 'word': 'volcat', 'head': 4, 'deprel': 'dep'},
+  {'index': 11, 'word': '.', 'head': 4, 'deprel': 'punct'},
+  {'index': 12, 'word': 'volcano', 'head': 14, 'deprel': 'compound'},
+  {'index': 13, 'word': 'web', 'head': 14, 'deprel': 'compound'},
+  {'index': 14, 'word': 'camera', 'head': 4, 'deprel': 'dep'},
+  {'index': 15, 'word': '.', 'head': 2, 'deprel': 'punct'}
+]
+
+parse_list1:
+[
+  {'index': 1, 'word': 'observation', 'head': 4, 'deprel': 'compound'},
+  {'index': 2, 'word': 'volcanic', 'head': 4, 'deprel': 'compound'},
+  {'index': 3, 'word': 'ash', 'head': 4, 'deprel': 'compound'},
+  {'index': 4, 'word': 'cloud', 'head': 0, 'deprel': 'root'},
+  {'index': 5, 'word': ':', 'head': 4, 'deprel': 'punct'},
+  {'index': 6, 'word': 'sfc/fl150', 'head': 8, 'deprel': 'amod'},
+  {'index': 7, 'word': 'n1433', 'head': 8, 'deprel': 'amod'},
+  {'index': 8, 'word': 'w09113', 'head': 4, 'deprel': 'dep'},
+  {'index': 9, 'word': '-', 'head': 8, 'deprel': 'punct'},
+  {'index': 10, 'word': 'n1430', 'head': 11, 'deprel': 'amod'},
+  {'index': 11, 'word': 'w09054', 'head': 8, 'deprel': 'dep'},
+  {'index': 12, 'word': '-', 'head': 11, 'deprel': 'punct'},
+  {'index': 13, 'word': 'n1426', 'head': 14, 'deprel': 'amod'},
+  {'index': 14, 'word': 'w09055', 'head': 11, 'deprel': 'dep'},
+  {'index': 15, 'word': '-', 'head': 8, 'deprel': 'punct'},
+  {'index': 16, 'word': 'n1423', 'head': 17, 'deprel': 'amod'},
+  {'index': 17, 'word': 'w09111', 'head': 8, 'deprel': 'dep'},
+  {'index': 18, 'word': '-', 'head': 4, 'deprel': 'punct'},
+  {'index': 19, 'word': 'n1433', 'head': 4, 'deprel': 'dep'},
+  {'index': 20, 'word': 'w09113', 'head': 22, 'deprel': 'amod'},
+  {'index': 21, 'word': 'mov', 'head': 22, 'deprel': 'compound'},
+  {'index': 22, 'word': 'w', 'head': 23, 'deprel': 'nsubj'},
+  {'index': 23, 'word': '5-10kt', 'head': 19, 'deprel': 'xcomp'}
+]
+
+parse_list2:
+[
+  {'index': 1, 'word': 'forecast', 'head': 4, 'deprel': 'nsubj'},
+  {'index': 2, 'word': 'volcanic', 'head': 3, 'deprel': 'amod'},
+  {'index': 3, 'word': 'ash', 'head': 1, 'deprel': 'amod'},
+  {'index': 4, 'word': 'cloud', 'head': 0, 'deprel': 'root'},
+  {'index': 5, 'word': '+6', 'head': 6, 'deprel': 'nummod'},
+  {'index': 6, 'word': 'hr', 'head': 4, 'deprel': 'dobj'},
+  {'index': 7, 'word': ':', 'head': 6, 'deprel': 'punct'},
+  {'index': 8, 'word': '22/1430z', 'head': 11, 'deprel': 'amod'},
+  {'index': 9, 'word': 'sfc/fl150', 'head': 11, 'deprel': 'amod'},
+  {'index': 10, 'word': 'n1436', 'head': 11, 'deprel': 'amod'},
+  {'index': 11, 'word': 'w09153', 'head': 6, 'deprel': 'dep'},
+  {'index': 12, 'word': '-', 'head': 6, 'deprel': 'punct'},
+  {'index': 13, 'word': 'n1425', 'head': 14, 'deprel': 'amod'},
+  {'index': 14, 'word': 'w09154', 'head': 6, 'deprel': 'dep'},
+  {'index': 15, 'word': '-', 'head': 6, 'deprel': 'punct'},
+  {'index': 16, 'word': 'n1424', 'head': 17, 'deprel': 'amod'},
+  {'index': 17, 'word': 'w09213', 'head': 6, 'deprel': 'dep'},
+  {'index': 18, 'word': '-', 'head': 6, 'deprel': 'punct'},
+  {'index': 19, 'word': 'n1435', 'head': 20, 'deprel': 'amod'},
+  {'index': 20, 'word': 'w09214', 'head': 6, 'deprel': 'dep'},
+  {'index': 21, 'word': '-', 'head': 6, 'deprel': 'punct'},
+  {'index': 22, 'word': 'n1436', 'head': 26, 'deprel': 'amod'},
+  {'index': 23, 'word': 'w09153', 'head': 26, 'deprel': 'amod'},
+  {'index': 24, 'word': 'sfc/fl150', 'head': 26, 'deprel': 'amod'},
+  {'index': 25, 'word': 'n1433', 'head': 26, 'deprel': 'amod'},
+  {'index': 26, 'word': 'w09111', 'head': 6, 'deprel': 'dep'},
+  {'index': 27, 'word': '-', 'head': 6, 'deprel': 'punct'},
+  {'index': 28, 'word': 'n1430', 'head': 29, 'deprel': 'amod'},
+  {'index': 29, 'word': 'w09055', 'head': 6, 'deprel': 'dep'},
+  {'index': 30, 'word': '-', 'head': 6, 'deprel': 'punct'},
+  {'index': 31, 'word': 'n1426', 'head': 32, 'deprel': 'amod'},
+  {'index': 32, 'word': 'w09054', 'head': 6, 'deprel': 'dep'},
+  {'index': 33, 'word': '-', 'head': 6, 'deprel': 'punct'},
+  {'index': 34, 'word': 'n1423', 'head': 35, 'deprel': 'amod'},
+  {'index': 35, 'word': 'w09110', 'head': 6, 'deprel': 'dep'},
+  {'index': 36, 'word': '-', 'head': 35, 'deprel': 'punct'},
+  {'index': 37, 'word': 'n1433', 'head': 38, 'deprel': 'amod'},
+  {'index': 38, 'word': 'w09111', 'head': 35, 'deprel': 'dep'}
+]
+
+parse_list3:
+[
+  {'index': 1, 'word': 'forecast', 'head': 4, 'deprel': 'compound'},
+  {'index': 2, 'word': 'volcanic', 'head': 4, 'deprel': 'amod'},
+  {'index': 3, 'word': 'ash', 'head': 4, 'deprel': 'amod'},
+  {'index': 4, 'word': 'cloud', 'head': 0, 'deprel': 'root'},
+  {'index': 5, 'word': '+12', 'head': 6, 'deprel': 'nummod'},
+  {'index': 6, 'word': 'hr', 'head': 4, 'deprel': 'dep'},
+  {'index': 7, 'word': ':', 'head': 4, 'deprel': 'punct'},
+  {'index': 8, 'word': '22/2030z', 'head': 11, 'deprel': 'amod'},
+  {'index': 9, 'word': 'sfc/fl150', 'head': 11, 'deprel': 'amod'},
+  {'index': 10, 'word': 'n1434', 'head': 11, 'deprel': 'amod'},
+  {'index': 11, 'word': 'w09112', 'head': 4, 'deprel': 'dep'},
+  {'index': 12, 'word': '-', 'head': 11, 'deprel': 'punct'},
+  {'index': 13, 'word': 'n1430', 'head': 14, 'deprel': 'amod'},
+  {'index': 14, 'word': 'w09053', 'head': 11, 'deprel': 'dep'},
+  {'index': 15, 'word': '-', 'head': 4, 'deprel': 'punct'},
+  {'index': 16, 'word': 'n1427', 'head': 4, 'deprel': 'parataxis'},
+  {'index': 17, 'word': 'w09055', 'head': 16, 'deprel': 'dep'},
+  {'index': 18, 'word': '-', 'head': 16, 'deprel': 'punct'},
+  {'index': 19, 'word': 'n1424', 'head': 20, 'deprel': 'amod'},
+  {'index': 20, 'word': 'w09110', 'head': 16, 'deprel': 'dep'},
+  {'index': 21, 'word': '-', 'head': 20, 'deprel': 'punct'},
+  {'index': 22, 'word': 'n1434', 'head': 23, 'deprel': 'amod'},
+  {'index': 23, 'word': 'w09112', 'head': 20, 'deprel': 'dep'}
+]
+
+parse_list4:
+[
+  {'index': 1, 'word': 'forecast', 'head': 4, 'deprel': 'compound'},
+  {'index': 2, 'word': 'volcanic', 'head': 4, 'deprel': 'amod'},
+  {'index': 3, 'word': 'ash', 'head': 4, 'deprel': 'amod'},
+  {'index': 4, 'word': 'cloud', 'head': 0, 'deprel': 'root'},
+  {'index': 5, 'word': '+18', 'head': 6, 'deprel': 'nummod'},
+  {'index': 6, 'word': 'hr', 'head': 4, 'deprel': 'dep'},
+  {'index': 7, 'word': ':', 'head': 4, 'deprel': 'punct'},
+  {'index': 8, 'word': '23/0230z', 'head': 9, 'deprel': 'amod'},
+  {'index': 9, 'word': 'sfc/fl150', 'head': 4, 'deprel': 'dep'},
+  {'index': 10, 'word': 'no', 'head': 12, 'deprel': 'neg'},
+  {'index': 11, 'word': 'ash', 'head': 12, 'deprel': 'amod'},
+  {'index': 12, 'word': 'exp', 'head': 9, 'deprel': 'dep'}
+]
+
+parse_list5:
+[
+  {'index': 1, 'word': 'remark', 'head': 0, 'deprel': 'root'},
+  {'index': 2, 'word': ':', 'head': 1, 'deprel': 'punct'},
+  {'index': 3, 'word': 'cont', 'head': 6, 'deprel': 'amod'},
+  {'index': 4, 'word': 'volcanic', 'head': 5, 'deprel': 'amod'},
+  {'index': 5, 'word': 'ash', 'head': 6, 'deprel': 'amod'},
+  {'index': 6, 'word': 'em', 'head': 33, 'deprel': 'nsubj'},
+  {'index': 7, 'word': 'seen', 'head': 6, 'deprel': 'acl'},
+  {'index': 8, 'word': 'on', 'head': 11, 'deprel': 'case'},
+  {'index': 9, 'word': 'stlt', 'head': 11, 'deprel': 'amod'},
+  {'index': 10, 'word': 'mov', 'head': 11, 'deprel': 'compound'},
+  {'index': 11, 'word': 'w', 'head': 7, 'deprel': 'nmod'},
+  {'index': 12, 'word': 'extending', 'head': 11, 'deprel': 'acl'},
+  {'index': 13, 'word': 'approx', 'head': 12, 'deprel': 'iobj'},
+  {'index': 14, 'word': '20', 'head': 15, 'deprel': 'nummod'},
+  {'index': 15, 'word': 'nm', 'head': 16, 'deprel': 'nmod:npmod'},
+  {'index': 16, 'word': 'away', 'head': 13, 'deprel': 'dep'},
+  {'index': 17, 'word': 'fm', 'head': 19, 'deprel': 'dep'},
+  {'index': 18, 'word': 'the', 'head': 19, 'deprel': 'det'},
+  {'index': 19, 'word': 'summit', 'head': 28, 'deprel': 'dep'},
+  {'index': 20, 'word': '.', 'head': 19, 'deprel': 'punct'},
+  {'index': 21, 'word': 'volcanic', 'head': 22, 'deprel': 'amod'},
+  {'index': 22, 'word': 'ash', 'head': 23, 'deprel': 'amod'},
+  {'index': 23, 'word': 'height', 'head': 28, 'deprel': 'nsubj'},
+  {'index': 24, 'word': 'and', 'head': 23, 'deprel': 'cc'},
+  {'index': 25, 'word': 'movement', 'head': 23, 'deprel': 'conj'},
+  {'index': 26, 'word': 'based', 'head': 25, 'deprel': 'acl'},
+  {'index': 27, 'word': 'on', 'head': 26, 'deprel': 'compound:prt'},
+  {'index': 28, 'word': 'goes', 'head': 16, 'deprel': 'dep'},
+  {'index': 29, 'word': 'east', 'head': 30, 'deprel': 'amod'},
+  {'index': 30, 'word': 'imagery', 'head': 28, 'deprel': 'dobj'},
+  {'index': 31, 'word': '.', 'head': 16, 'deprel': 'punct'},
+  {'index': 32, 'word': 'models', 'head': 12, 'deprel': 'dobj'},
+  {'index': 33, 'word': 'suggest', 'head': 1, 'deprel': 'appos'},
+  {'index': 34, 'word': 'w-ward', 'head': 35, 'deprel': 'amod'},
+  {'index': 35, 'word': 'mov', 'head': 33, 'deprel': 'dobj'},
+  {'index': 36, 'word': 'thru', 'head': 39, 'deprel': 'case'},
+  {'index': 37, 'word': 't', 'head': 39, 'deprel': 'compound'},
+  {'index': 38, 'word': '+12', 'head': 39, 'deprel': 'nummod'},
+  {'index': 39, 'word': 'hrs', 'head': 35, 'deprel': 'nmod'},
+  {'index': 40, 'word': '...', 'head': 33, 'deprel': 'punct'},
+  {'index': 41, 'word': 'kim', 'head': 33, 'deprel': 'parataxis'}
+]
+
+parse_list7:
+[
+  {'index': 1, 'word': 'date-time', 'head': 2, 'deprel': 'amod'},
+  {'index': 2, 'word': 'group', 'head': 0, 'deprel': 'root'},
+  {'index': 3, 'word': ':', 'head': 2, 'deprel': 'punct'},
+  {'index': 4, 'word': '20180222/0841z', 'head': 2, 'deprel': 'dep'}
+]
+
+parse_list8:
+[
+  {'index': 1, 'word': 'volcanic', 'head': 2, 'deprel': 'amod'},
+  {'index': 2, 'word': 'ash', 'head': 4, 'deprel': 'amod'},
+  {'index': 3, 'word': 'advisory', 'head': 4, 'deprel': 'amod'},
+  {'index': 4, 'word': 'center', 'head': 0, 'deprel': 'root'},
+  {'index': 5, 'word': ':', 'head': 4, 'deprel': 'punct'},
+  {'index': 6, 'word': 'washington', 'head': 4, 'deprel': 'dep'}
+]
+
+parse_list9:
+[
+  {'index': 1, 'word': 'volcano', 'head': 0, 'deprel': 'root'},
+  {'index': 2, 'word': ':', 'head': 1, 'deprel': 'punct'},
+  {'index': 3, 'word': 'fuego', 'head': 1, 'deprel': 'dep'},
+  {'index': 4, 'word': '342090', 'head': 3, 'deprel': 'nummod'}
+]
+
+parse_list10:
+[
+  {'index': 1, 'word': 'position', 'head': 0, 'deprel': 'root'},
+  {'index': 2, 'word': ':', 'head': 1, 'deprel': 'punct'},
+  {'index': 3, 'word': 'n1428', 'head': 4, 'deprel': 'amod'},
+  {'index': 4, 'word': 'w09052', 'head': 1, 'deprel': 'dep'}
+]
+
+parse_list11:
+[
+  {'index': 1, 'word': 'area', 'head': 0, 'deprel': 'root'},
+  {'index': 2, 'word': ':', 'head': 1, 'deprel': 'punct'},
+  {'index': 3, 'word': 'guatemala', 'head': 1, 'deprel': 'dep'}
+]
+
+parse_list12:
+[
+  {'index': 1, 'word': 'summit', 'head': 2, 'deprel': 'compound'},
+  {'index': 2, 'word': 'elevation', 'head': 0, 'deprel': 'root'},
+  {'index': 3, 'word': ':', 'head': 2, 'deprel': 'punct'},
+  {'index': 4, 'word': '12346', 'head': 5, 'deprel': 'nummod'},
+  {'index': 5, 'word': 'ft', 'head': 2, 'deprel': 'dep'},
+  {'index': 6, 'word': '-LRB-', 'head': 8, 'deprel': 'punct'},
+  {'index': 7, 'word': '3763', 'head': 8, 'deprel': 'compound'},
+  {'index': 8, 'word': 'm', 'head': 5, 'deprel': 'dep'},
+  {'index': 9, 'word': '-RRB-', 'head': 8, 'deprel': 'punct'}
+]
+
+parse_list13:
+[
+  {'index': 1, 'word': 'advisory', 'head': 2, 'deprel': 'amod'},
+  {'index': 2, 'word': 'number', 'head': 0, 'deprel': 'root'},
+  {'index': 3, 'word': ':', 'head': 2, 'deprel': 'punct'},
+  {'index': 4, 'word': '2018/163', 'head': 2, 'deprel': 'dep'}
+]
+
+parse_list14:
+[
+  {'index': 1, 'word': 'eruption', 'head': 2, 'deprel': 'compound'},
+  {'index': 2, 'word': 'details', 'head': 0, 'deprel': 'root'},
+  {'index': 3, 'word': ':', 'head': 2, 'deprel': 'punct'},
+  {'index': 4, 'word': 'volcanic', 'head': 5, 'deprel': 'amod'},
+  {'index': 5, 'word': 'ash', 'head': 6, 'deprel': 'amod'},
+  {'index': 6, 'word': 'ems', 'head': 7, 'deprel': 'nsubj'},
+  {'index': 7, 'word': 'continue', 'head': 2, 'deprel': 'parataxis'}
+]
+
+parse_list15:
+[
+  {'index': 1, 'word': 'observation', 'head': 5, 'deprel': 'nummod'},
+  {'index': 2, 'word': 'volcanic', 'head': 3, 'deprel': 'amod'},
+  {'index': 3, 'word': 'ash', 'head': 5, 'deprel': 'amod'},
+  {'index': 4, 'word': 'date-time', 'head': 5, 'deprel': 'amod'},
+  {'index': 5, 'word': 'group', 'head': 0, 'deprel': 'root'},
+  {'index': 6, 'word': ':', 'head': 5, 'deprel': 'punct'},
+  {'index': 7, 'word': '22/0815z', 'head': 5, 'deprel': 'dep'}
+]
+
+parse_list16:
+[
+  {'index': 1, 'word': 'next', 'head': 2, 'deprel': 'amod'},
+  {'index': 2, 'word': 'advisory', 'head': 0, 'deprel': 'root'},
+  {'index': 3, 'word': ':', 'head': 2, 'deprel': 'punct'},
+  {'index': 4, 'word': 'will', 'head': 6, 'deprel': 'aux'},
+  {'index': 5, 'word': 'be', 'head': 6, 'deprel': 'auxpass'},
+  {'index': 6, 'word': 'issued', 'head': 2, 'deprel': 'dep'},
+  {'index': 7, 'word': 'by', 'head': 8, 'deprel': 'case'},
+  {'index': 8, 'word': '20180222/1445z', 'head': 6, 'deprel': 'nmod'}
+]
+
+length of p_p: 17
+
+vaac_id: fvxx23
+vaac_code: knes
+issued_id: 220841
+header_tag length: 3

@@ -1,96 +1,148 @@
-from warnings import Warning
+import re, sys
+sys.path.insert(0, r"C:\Users\fpang\Desktop\nlp_project\main\volcano_examples")
+from warningclass import Warning
 
 class Cyclones(Warning):
-	def start(self, paragraph, outfile):
-		temp = paragraph.split()
-		self.print4tab("wmo_id", temp[0], wfile)
-		self.print4tab("station", temp[1], wfile)
-		self.print4tab("ddhhmm", temp[2], wfile)
-		temp = f.readline().split()
-		self.print4tab("awips", temp[0], wfile)
-
-		pattern = re.compile('(\w{4}\d\d \w{4} \d{6})')
-		dtg = re.compile('(\d{8}/\d{3}\w)')
-		paragraph = self.search("VA ADVISORY")
-		lines = paragraph.split('\n')
-		for line in lines:
-			if pattern.match(line):
-				line = line.split()
-				self.print4tab("vaac_id", line[0], outfile)
-				self.print4tab("vaac_code", line[1], outfile)
-				self.print4tab("issued_id", line[2], outfile)
-			elif "DTG: " in line:
-				line = line.replace("DTG: ", "")
-				self.print4tab("issued_time", line, outfile)
-
-	
-
-	def forecast(paragraphlist, outfile):
-	while "FORECAST" in paragraphlist[0]:
-		outfile.write("\t\t\t\t<forecast>\n")
-		numbersonly = numonly(paragraphlist[0])
-		numtext = extractnum(paragraphlist[0])
-		outlook(numtext, outfile)
-		for i in range(6):
-			numbersonly.pop(0)
-		for x in range(int(len(numbersonly)/5)):
-			print5tab("windRadii", numbersonly[5*x] + " KT", outfile)
-			outfile.write("\t\t\t\t\t<radii" + numbersonly[5*x] + "Knot>\n")
-			print6tab("NEradii", numbersonly[5*x+1], outfile)
-			print6tab("SEradii", numbersonly[5*x+2], outfile)
-			print6tab("SWradii", numbersonly[5*x+3], outfile)
-			print6tab("NWradii", numbersonly[5*x+4], outfile)
-			outfile.write("\t\t\t\t\t</radii" + numbersonly[5*x] + "Knot>\n")
-		outfile.write("\t\t\t\t</forecast>\n")
-		paragraphlist.pop(0)
-	return paragraphlist
-
-	def outlook(numlist, outfile, include=False):
-		if include==True:
-			outfile.write("\t\t\t\t<outlook>\n")
-		print5tab("day", numlist[0][0:2], outfile)
-		print5tab("time", numlist[0][3:7], outfile)
-		print5tab("timeZone", numlist[0][7:8], outfile)
-		print5tab("latitude", numlist[1], outfile)
-		print5tab("longitude", numlist[2], outfile)
-		print5tab("maxWinds", numlist[3], outfile)
-		print5tab("gusts", numlist[4], outfile)
-		if include ==True:
-			outfile.write("\t\t\t\t</outlook>\n")
-
-# import sys,re
+	def separate(self):
+		#Separate paragraphs into two lists of parse and don't parse
+		for i in range(1,len(self.paragraphlist)):
+			currentstring=self.paragraphlist[i]
+			if "CENTER LOCATED" in currentstring:
+				self.noparse.append(currentstring)
+			elif "PRESSURE" in currentstring:
+				self.noparse.append(currentstring)
+			elif "FORECAST VALID" in currentstring:
+				self.noparse.append(currentstring)
+			elif "OUTLOOK" in currentstring:
+				self.noparse.append(currentstring)
+			elif "NEXT ADVISORY" in currentstring or ("LAST" in currentstring and "ADVISORY" in currentstring):
+				self.noparse.append(currentstring)
+			elif "FORECASTER" in currentstring:
+				self.noparse.append(currentstring)
+			elif "REQUEST" in currentstring:
+				self.noparse.append(currentstring)
+			elif "MOVEMENT" in currentstring:
+				self.noparse.append(currentstring)
+			else:
+				self.parse.append(currentstring.lower())
+		#print(self.noparse)
+		#print(self.parse)
 
 
+	def start(self, outfile):
+		#Write the beginning paragraph
+		temp = self.paragraphlist[0].split()
+		self.print4tab("wmo_id", temp[0], outfile)
+		self.print4tab("station", temp[1], outfile)
+		self.print4tab("ddhhmm", temp[2], outfile)
+		self.print4tab("awips", temp[3], outfile)
+
+	def numonly(self, string):
+		#Extract only the numbers from a paragraph
+		num = re.compile('(\d)')
+		numbers = re.findall(r'-?\d+\.?\d*', string)
+		return numbers
+
+	def extractnum(self, string):
+		#Extract numbers and the characters attached to them
+		num = re.compile('(\d)')
+		numbers = []
+		for word in string.split():
+			if num.match(word):
+				numbers.append(word)
+		return numbers
+
+	def forecast(self, outfile):
+		#Handle the forecast section
+		for i in range(len(self.noparse)):
+			currentstring = self.noparse[i]
+			if "FORECAST VALID" in currentstring:
+				outfile.write("\t\t\t\t<forecast>\n")
+				numbersonly = self.numonly(currentstring)
+				numtext = self.extractnum(currentstring)
+				self.print5tab("day", numtext[0][0:2], outfile)
+				self.print5tab("time", numtext[0][3:7], outfile)
+				self.print5tab("timeZone", numtext[0][7:8], outfile)
+				self.print5tab("latitude", numtext[1], outfile)
+				self.print5tab("longitude", numtext[2], outfile)
+				self.print5tab("maxWinds", numtext[3], outfile)
+				self.print5tab("gusts", numtext[4], outfile)
+				for i in range(6):
+					numbersonly.pop(0)
+				for x in range(int(len(numbersonly)/5)):
+					self.print5tab("windRadii", numbersonly[5*x] + " KT", outfile)
+					outfile.write("\t\t\t\t\t<radii" + numbersonly[5*x] + "Knot>\n")
+					self.print6tab("NEradii", numbersonly[5*x+1], outfile)
+					self.print6tab("SEradii", numbersonly[5*x+2], outfile)
+					self.print6tab("SWradii", numbersonly[5*x+3], outfile)
+					self.print6tab("NWradii", numbersonly[5*x+4], outfile)
+					outfile.write("\t\t\t\t\t</radii" + numbersonly[5*x] + "Knot>\n")
+				outfile.write("\t\t\t\t</forecast>\n")
+
+	def outlook(self, outfile):
+		#Handle the outlook section
+		for i in range(len(self.noparse)):
+			currentstring = self.noparse[i]
+			if "OUTLOOK" in currentstring and "VALID" in currentstring:
+				numlist = self.extractnum(currentstring)
+				#print(numlist)
+				outfile.write("\t\t\t\t<outlook>\n")
+				self.print5tab("day", numlist[0][0:2], outfile)
+				self.print5tab("time", numlist[0][3:7], outfile)
+				self.print5tab("timeZone", numlist[0][7:8], outfile)
+				self.print5tab("latitude", numlist[1], outfile)
+				self.print5tab("longitude", numlist[2], outfile)
+				self.print5tab("maxWinds", numlist[3], outfile)
+				self.print5tab("gusts", numlist[4], outfile)
+				outfile.write("\t\t\t\t</outlook>\n")
+
+	def request(self, outfile):
+		#Create a new tag for the request section
+		for i in range(len(self.noparse)):
+			currentstring = self.noparse[i]
+			if "REQUEST" in currentstring:
+				self.print4tab("request", currentstring, outfile)
+
+	def nxtadv(self, outfile):
+		#Write the next advisory text
+		for i in range(len(self.noparse)):
+			currentstring = self.noparse[i]
+			if "ADVISORY" in currentstring:
+				self.print4tab("nxt_adv", currentstring, outfile)
+
+	def forecaster(self, outfile):
+		#Write the forecaster text
+		for i in range(len(self.noparse)):
+			stringlist = self.noparse[i].split()
+			for i in range(len(stringlist)):
+				if stringlist[i] == "FORECASTER":
+					self.print4tab("forecaster", stringlist[i+1], outfile)
+
+	def extract(self, outfile):
+		#Call all functions to write xml
+		self.separate()
+		self.start(outfile)
+		self.forecast(outfile)
+		self.outlook(outfile)
+		self.request(outfile)
+		self.nxtadv(outfile)
+		self.forecaster(outfile)
+	# def overview(self, tag, string, paragraphlist, outfile):
+	# 	while string in self.paragraphlist[0]:
+	# 		if string in paragraphlist[0]:
+	# 			text = paragraphlist[0].split("\n")
+	# 			text = " ".join(text)
+	# 			self.print4tab(tag, text, outfile)
+	# 			text = paragraphlist.pop(0)
+	# 		else:
+	# 			break
+	# 	return paragraphlist
 
 # def deleteuntil(string, paragraphlist):
 # 	count=0
 # 	for i in range(len(paragraphlist)):
 # 		if string in paragraphlist[i]:
 # 			paragraphlist = paragraphlist[i:]
-# 			break
-# 	return paragraphlist
-
-# num = re.compile('(\d)')
-
-# def numonly(string):
-# 	numbers = re.findall(r'-?\d+\.?\d*', string)
-# 	return numbers
-
-# def extractnum(string):
-# 	numbers = []
-# 	for word in string.split():
-# 		if num.match(word):
-# 			numbers.append(word)
-# 	return numbers
-
-# def overview(tag, string, paragraphlist, outfile):
-# 	while string in paragraphlist[0]:
-# 		if string in paragraphlist[0]:
-# 			text = paragraphlist[0].split("\n")
-# 			text = " ".join(text)
-# 			print4tab(tag, text, outfile)
-# 			text = paragraphlist.pop(0)
-# 		else:
 # 			break
 # 	return paragraphlist
 
@@ -130,9 +182,9 @@ class Cyclones(Warning):
 # 	#print("paragraph is", paragraphlist)
 # 		paragraphlist = overview("overview", "*", paragraphlist, wfile)
 # 	paragraphlist = deleteuntil("CENTER LOCATED NEAR", paragraphlist)
-	
+
 # 	wfile.write("\t\t\t\t<latestDetails>\n")
-	
+
 # 	numbers = extractnum(paragraphlist[0])
 # 	paragraphlist.pop(0)
 # 	print5tab("latitude", numbers[0], wfile)
@@ -141,7 +193,7 @@ class Cyclones(Warning):
 # 	print5tab("time", numbers[2][3:7],wfile)
 # 	print5tab("timeZone", numbers[2][7:8], wfile)
 # 	print5tab("accuracy", numbers[3], wfile)
-	
+
 # 	numbers = extractnum(paragraphlist[0])
 # 	paragraphlist.pop(0)
 # 	wfile.write("\t\t\t\t\t<movement>\n")

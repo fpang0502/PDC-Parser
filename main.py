@@ -1,35 +1,54 @@
+# C:\Users\fpang\AppData\Local\Programs\Python\Python36\Lib\site-packages\StanfordDependencies\SubprocessBackend.py
+# Line 88
+# finally:
+#	input_file.file.close()
+#	os.remove(input_file.name)
+
 import sys
-from volcano_examples.volcano import Volcanoes
-from cyclone_examples.cyclone import Cyclones
+sys.path.insert(0, r"C:\Users\fpang\Desktop\nlp_project\main\volcano_examples")
+sys.path.insert(0, r"C:\Users\fpang\Desktop\nlp_project\main\cyclone_examples")
+from volcano import Volcanoes
+from cyclone import Cyclones
 
 def main():
+	#Read and write warningtype according to commandline argument
 	try:
 		alert = sys.argv[1]
 		infile = sys.argv[2]
+		warningtype = None
 		if alert == "cyclone":
 			warningtype = Cyclones()
 		elif alert == "volcano":
-			warningtype = Bolcanoes()
+			warningtype = Volcanoes()
 		elif alert == "tsunami":
 			warningtype = Tsunamis()
 		else:
 			print("Please enter a valid warningtype.")
 			return
-	
+
 		try:
 			outfile= "revised" + infile
 			wfile=open(outfile,"w+")
 			wfile.write('<?xml version="1.0" encoding="UTF-8"?>\n\t<hazards>\n\t\t<' + alert + '>\n\t\t\t<incident>\n')
 			with open(sys.argv[2], "r") as f:
-				if type(warningtype) == type(Volcanoes()):
-					warningtype.getall(f)
-					warningtype.extract(wfile)
-				elif type(warningtype) == cyclones:
-					warningtype.getall(f)
-					warningtype.start(warningtype.paragraphlist[0], wfile)
-				else:
-					warnintype.getall(f)
-					warningtype.extract(wfile)
+				warningtype.getall(f)
+				warningtype.extract(wfile)
+
+				# print(type(warningtype))
+				# if type(warningtype) == type(Volcanoes()):
+				# 	warningtype.getall(f)
+				# 	warningtype.extract(wfile)
+				# 	#print("hello")
+				# elif type(warningtype) == type(Cyclones()):
+				# 	warningtype.getall(f)
+				# 	warningtype.extract(wfile)
+				# 	print("hello")
+				# 	for i in range(len(warningtype.parse)):
+				# 		print("Hello", '\n')
+				# 		_p_text.write(warningtype.parse[i] + '\n')
+				# elif type(warningtype) == type(Tsunamis()):
+				# 	warningtype.getall(f)
+				# 	warningtype.extract(wfile)
 		except IOError:
 			print("Could not read file: ", sys.argv[2])
 	except IndexError as error:
@@ -135,9 +154,9 @@ if __name__ == "__main__":
 # 	#print("paragraph is", paragraphlist)
 # 		paragraphlist = overview("overview", "*", paragraphlist, wfile)
 # 	paragraphlist = deleteuntil("CENTER LOCATED NEAR", paragraphlist)
-	
+
 # 	wfile.write("\t\t\t\t<latestDetails>\n")
-	
+
 # 	numbers = extractnum(paragraphlist[0])
 # 	paragraphlist.pop(0)
 # 	print5tab("latitude", numbers[0], wfile)
@@ -146,7 +165,7 @@ if __name__ == "__main__":
 # 	print5tab("time", numbers[2][3:7],wfile)
 # 	print5tab("timeZone", numbers[2][7:8], wfile)
 # 	print5tab("accuracy", numbers[3], wfile)
-	
+
 # 	numbers = extractnum(paragraphlist[0])
 # 	paragraphlist.pop(0)
 # 	wfile.write("\t\t\t\t\t<movement>\n")

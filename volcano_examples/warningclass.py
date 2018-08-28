@@ -2,6 +2,8 @@ class Warning:
 	def __init__(self):
 		# Constructor to create empty paragraphlist
 		self.paragraphlist = []
+		self.parse = []
+		self.noparse = []
 
 	def getparagraph(self, infile):
 		# Get a paragraph from the file

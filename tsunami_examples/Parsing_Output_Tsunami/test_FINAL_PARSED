@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<tsunami>
+			<incident>
+				<wmoID>WEPA42</wmoID>
+				<station>PHEB</station>
+				<ddhhmm>070343</ddhhmm>
+				<awips>TIBPAC</awips>
+				<UGC>
+				</UGC>
+				<issuer>NWS PACIFIC TSUNAMI WARNING CENTER EWA BEACH HI</issuer>
+				<time>0342 UTC FRI NOV 7 2014</time>
+				<event>
+					<earthquake>PRELIMINARY EARTHQUAKE PARAMETERS</earthquake>
+					<time>0334 UTC NOV 7 2014 </time>
+					<latitude>6.1 SOUTH</latitude>
+					<longitude>148.3 EAST</longitude>
+					<location>NEW BRITAIN REGION PAPUA NEW GUINEA </location>
+					<magnitude>
+						<value>6.9</value>
+					</magnitude>
+				</event>
+				<evaluation>* AN EARTHQUAKE WITH A PRELIMINARY MAGNITUDE OF 6.9 OCCURRED IN  THE NEW BRITAIN REGION, PAPUA NEW GUINEA AT 0334 UTC ON FRIDAY  NOVEMBER 7 2014.  * BASED ON ALL AVAILABLE DATA... THERE IS NO TSUNAMI THREAT  FROM THIS EARTHQUAKE.  * NO ACTION IS REQUIRED.  * THIS WILL BE THE ONLY STATEMENT ISSUED FOR THIS EVENT UNLESS  ADDITIONAL DATA ARE RECEIVED OR THE SITUATION CHANGES.</evaluation>
+				<additionalInfo>RECOMMENDED ACTIONS NEXT UPDATE AND ADDITIONAL INFORMATION</additionalInfo>
+			</incident>
+		</tsunami>
+	</hazards>

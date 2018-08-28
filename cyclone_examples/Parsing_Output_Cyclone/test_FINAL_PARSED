@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<hazards>
+		<cyclone>
+			<incident>
+				<wmoID>WTNT25</wmoID>
+				<station>KNHC</station>
+				<ddhhmm>171452</ddhhmm>
+				<awips>TCMAT5</awips>
+				<stormType>TROPICAL TROPICAL TROPICAL TROPICAL TROPICAL TROPICAL TROPICAL TROPICAL</stormType>
+				<stormName>MARIA</stormName>
+				<advisoryNumber>5</advisoryNumber>
+				<issuer>NWS NATIONAL HURRICANE CENTER MIAMI FL AL152017</issuer>
+				<basinID>AL</basinID>
+				<sequenceID>15</sequenceID>
+				<yearID>2017</yearID>
+				<dateTime>1500 UTC SUN SEP 17 2017</dateTime>
+				<overview>A HURRICANE WARNING IS IN EFFECT FOR ...* DOMINICA</overview>
+				<overview>A TROPICAL STORM WARNING IS IN EFFECT FOR ...* ST. LUCIA</overview>
+				<overview>A HURRICANE WATCH IS IN EFFECT FOR ...* ANTIGUA ... BARBUDA ... ST. KITTS ... NEVIS ... AND MONTSERRAT* GUADELOUPE* SABA AND ST. EUSTATIUS* ST. MAARTEN* ST. MARTIN AND ST. BARTHELEMY* ANGUILLA</overview>
+				<overview>A TROPICAL STORM WATCH IS IN EFFECT FOR ...* MARTINIQUE* BARBADOS* ST. VINCENT AND THE GRENADINES</overview>
+				<latestDetails>
+					<latitude>13.5 N</latitude>
+					<longitude>56.2 W</longitude>
+					<day>17</day>
+					<time>1500</time>
+					<timeZone>Z</timeZone>
+					<accuracy>30</accuracy>
+					<movement>
+						<direction>290</direction>
+						<speed>36</speed>
+					</movement>
+					<minPressure>994</minPressure>
+					<radii64Knot>
+					</radii64Knot>
+					<radii50Knot>
+					</radii50Knot>
+					<radii34Knot>
+					</radii34Knot>
+					<radii12ftSeas>
+					</radii12ftSeas>
+				</latestDetails>
+			</incident>
+		</cyclone>
+	</hazards>

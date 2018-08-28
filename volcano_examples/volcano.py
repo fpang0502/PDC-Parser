@@ -1,21 +1,31 @@
 import re, sys
+sys.path.insert(0, r"C:\Users\fpang\Desktop\nlp_project\main\volcano_examples")
 from warningclass import Warning
 
 class Volcanoes(Warning):
 	def start(self, outfile):
-		pattern = re.compile('(\w{4}\d\d \w{4} \d{6})')
-		dtg = re.compile('(\d{8}/\d{3}\w)')
+		pattern = re.compile(r'[A-Z]+[0-9]+ [A-Z]+ [0-9]+')
+		dtg = re.compile(r'[0-9]+[/][0-9]+[Z]')
+		vaac_id = re.compile(r'[A-Z]+[0-9]+')
+		vaac_code = re.compile(r'[A-Z]+')
+		issued_id = re.compile(r'[0-9]+')
 		paragraph = self.search("VA ADVISORY")
 		lines = paragraph.split('\n')
 		for line in lines:
 			if pattern.match(line):
 				line = line.split()
-				self.print4tab("vaac_id", line[0], outfile)
-				self.print4tab("vaac_code", line[1], outfile)
-				self.print4tab("issued_id", line[2], outfile)
-			elif "DTG: " in line:
-				line = line.replace("DTG: ", "")
-				self.print4tab("issued_time", line, outfile)
+				for i in line:
+					if vaac_id.match(i):
+						self.print4tab("vaac_id", i, outfile)
+					elif vaac_code.match(i):
+						self.print4tab("vaac_code", i, outfile)
+					elif issued_id.match(i):
+						self.print4tab("issued_id", i, outfile)
+			elif dtg.search(line):
+				temp = dtg.search(line).group(0)
+				self.print4tab("issued_time", temp, outfile)
+			else:
+				continue
 	def volcanopsn(self, outfile):
 		paragraph = self.search("VOLCANO:")
 		lines = paragraph.split('\n')

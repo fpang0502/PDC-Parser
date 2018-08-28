@@ -2,6 +2,8 @@ class Warning:
 	def __init__(self):
 		# Constructor to create empty paragraphlist
 		self.paragraphlist = []
+		self.noparse = []
+		self.parse = []
 
 	def getparagraph(self, infile):
 		# Get a paragraph from the file
@@ -29,7 +31,7 @@ class Warning:
 			if string in self.paragraphlist[i]:
 				break
 		return self.paragraphlist[i]
-	
+
 	def searchdelete(self, string):
 		paragraph = self.search(string)
 		lines = paragraph.split('\n')
